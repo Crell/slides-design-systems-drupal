@@ -28,7 +28,7 @@ body {
 
 ::selection {
   color: white;
-  background: #ff5e99;
+  background: #0da9a0;
   text-shadow: none; }
 
 /*********************************************
@@ -42,7 +42,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #eeeeee;
-  line-height: 0.9em;
+  line-height: 1em;
   letter-spacing: -0.02em;
   font-weight: 600; }
 
@@ -158,3 +158,7 @@ q:after {
 
 p.bigtext {
   font-size: 150%; }
+
+.gray {
+  opacity: .4;
+}
