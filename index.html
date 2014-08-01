@@ -49,10 +49,6 @@
       padding: 0px;
     }
 
-    .gray {
-      opacity: .4;
-    }
-
     .reveal h2 + p.bigtext,
     .reveal p + p {
       margin-top: 1em;
@@ -60,6 +56,10 @@
 
     .struck {
       text-decoration: line-through;
+    }
+
+    ul li {
+      list-style-type: none;
     }
 
     </style>
@@ -73,7 +73,7 @@
         <section>
           <h2>Design Systems, Drupal, <br/>and Beautiful Synergy</h2>
           <p>
-            <small>Presented by <a href="http://www.garfieldtech.com/">Larry Garfield</a> (<a href="http://twitter.com/Crell">@Crell</a>) / <a href="PATRICK PUT A URL HERE">Patrick Grady</a> (<a href="http://twitter.com/patrickgrady">@patrickgrady</a>)</small>
+            <small>Presented by <a href="http://www.garfieldtech.com/">Larry Garfield</a> (<a href="http://twitter.com/Crell">@Crell</a>) / <a href="http://www.pgrady.com/">Patrick Grady</a> (<a href="http://twitter.com/patrickgrady">@patrickgrady</a>)</small>
           </p>
         </section>
         <section>
@@ -92,7 +92,7 @@
           <!--<img src="palantir/palantirnet-logo-4c-reversed.svg" alt="Palantir.net Pays me, too!" style="width: 300px; float: right;" />-->
           <ul>
             <li>Senior Designer, <a href="http://www.palantir.net/">Palantir.net</a></li>
-            <li>An aspiring gentleman of Leisure</li>
+            <li>An aspiring gentleman of leisure</li>
           </ul>
         </section>
 
@@ -101,16 +101,16 @@
         <section>
 
           <section>
-            <p class="bigtext">The Key to Beautiful Synergy</p>
-            <h2 style="margin-top: 1em;"><em>Think Systems, Not Pages.</em></h2>
+            <p class="blue"><small>The Key to Beautiful Synergy</small></p>
+            <h2><em>Think Systems</em>, Not Pages.</h2>
           </section>
 
           <section>
             <h2>Why Design in Systems?</h2>
             <ul>
-              <li class="fragment">Consistency <span class="gray">(Visual + Content)</span></li>
-              <li class="fragment">Efficiency <span class="gray">(Production)</span></li>
-              <li class="fragment">Sustainability <span class="gray">(Life After Us)</span></li>
+              <li class="fragment">Consistency <span class="blue">(Visual + Content)</span></li>
+              <li class="fragment">Efficiency <span class="blue">(Production)</span></li>
+              <li class="fragment">Sustainability <span class="blue">(Life After Us)</span></li>
             </ul>
             <aside class="notes">
               <p>Consistency: improves the design aesthetically, but from a UX standpoint it also helps your user with orientation and wayfinding.</p>
@@ -120,14 +120,14 @@
           </section>
 
           <section>
-            <p class="gray">
+            <p class="blue">
               <small>sys•tem | ˈsistəm | <em>noun</em></small>
             </p>
             <h2><span class="gray">A set of</span> interconnected parts <span class="gray">forming a</span> complex whole<span class="gray">.</span></h2>
           </section>
 
           <section>
-            <p><small class="gray">Interconnected Parts</small></p>
+            <p><small class="blue">Interconnected Parts</small></p>
             <h3>Elements, Components, Templates</h3>
             <br/>
             <p><small class="gray">Complex Whole</small></p>
@@ -135,25 +135,25 @@
           </section>
 
           <section>
-            <p><small class="gray">Interconnected Parts</small></p>
+            <p><small class="blue">Interconnected Parts</small></p>
             <h3>Elements<span class="gray">, Components, Templates</span></h3>
             <p>H1–H6, p, a, ul, ol, hr, blockquote, form elements, etc.</p>
           </section>
 
           <section>
-            <p><small class="gray">Interconnected Parts</small></p>
+            <p><small class="blue">Interconnected Parts</small></p>
             <h3><span class="gray">Elements,</span> Components<span class="gray">, Templates</span></h3>
             <p>Header, footer, navigation, hero element, call-to-action, etc.</p>
           </section>
 
           <section>
-            <p><small class="gray">Interconnected Parts</small></p>
+            <p><small class="blue">Interconnected Parts</small></p>
             <h3><span class="gray">Elements, Components,</span> Templates</h3>
             <p>General page, home page, landing page, listing page, etc.</p>
           </section>
 
           <section>
-            <h2>Atomic Design</h2>
+            <h3>Atomic Design</h3>
             <img src="assets/atomic.png" alt="" style="margin-top:.25em;"/>
             </p>
           </section>
@@ -162,7 +162,7 @@
             <p><small class="gray">Interconnected Parts</small></p>
             <h3 class="gray">Elements, Components, Templates</h3>
             <br/>
-            <p><small class="gray">Complex Whole</small></p>
+            <p><small class="blue">Complex Whole</small></p>
             <h3>A CMS-Driven Site</h3>
           </section>
 
@@ -181,18 +181,16 @@
         <section>
 
           <section>
-            <p><small class="gray">Step One</small></p>
+            <p><small class="blue">Step One</small></p>
             <h2>Start at the Beginning</h2>
           </section>
 
           <section>
-            <p><small class="gray">Colors</small>
-            <img src="assets/pri-colors.jpg" alt="" style="margin-top:.25em;"/>
-            </p>
+            <img src="assets/pri-colors.jpg" alt=""/>
           </section>
 
           <section>
-            <p><small class="gray">Elements: H1–H6, p, a, ul, ol, hr, etc.</small>
+            <p><small class="">Elements: H1–H6, p, a, ul, ol, hr, etc.</small>
             <img src="assets/pri-elements-full.jpg" alt="" style="margin-top:.25em;"/>
             </p>
             <aside class="notes">
@@ -205,9 +203,9 @@
         <section>
 
           <section>
-            <p><small class="gray">Step Two</small></p>
+            <p><small class="blue">Step Two</small></p>
             <h2>Get to Know Your Content</h2>
-            <p>Why are people coming here?</p>
+            <p class="gray">Why are people coming here?</p>
           </section>
 
           <section>
@@ -231,7 +229,7 @@
               <li>External links</li>
               <li>Related content</li>
               <li>Newest / Most Commented / Most Shared</li>
-              <li>Ad spaces(2)</li>
+              <li>Ad spaces (2)</li>
             </ul>
           </section>
 
@@ -240,55 +238,55 @@
         <section>
 
           <section>
-            <p><small class="gray">Step Three</small></p>
-            <h2>Combine Colors &amp; Elements to Create Components, and Your First Template</h2>
+            <p><small class="blue">Step Three</small></p>
+            <h2><span class="gray">Combine</span> Colors &amp; Elements <span class="gray">to Create</span> Components<span class="gray">, and Your First</span> Template</h2>
           </section>
 
           <section>
-            <p><small class="gray">Story Header: Date, Author, Title, Program, Section</small>
+            <p><small class="">Story Header: Date, Author, Title, Program, Section</small>
             <img src="assets/pri-component-story-header.jpg" alt="" style="margin-top:.25em;"/>
             </p>
           </section>
 
           <section>
-            <p><small class="gray">Ad Block</small>
+            <p><small class="">Ad Block</small>
             <img src="assets/pri-component-ad.jpg" alt="" style="margin-top:.25em;"/>
             </p>
           </section>
 
           <section>
-            <p><small class="gray">Lede Image, caption, credit</small>
+            <p><small class="">Lede Image, caption, credit</small>
             <img src="assets/pri-component-lede.jpg" alt="" style="margin-top:.25em;"/>
             </p>
           </section>
 
           <section>
-            <p><small class="gray">Share controls</small>
+            <p><small class="">Share controls</small>
             <img src="assets/pri-component-share.jpg" alt="" style="margin-top:.25em;"/>
             </p>
           </section>
 
           <section>
-            <img src="assets/pri-story-full.jpg" alt=""/>
+            <div style="position:relative; left:0; top:0;">
+              <img style="position:relative; left:0; top:0;" class="" src="assets/pri-story-full.jpg" alt=""/>
+              <img style="position:absolute; left:377px; top:0; width:205px; height:665px;" class="fragment" src="assets/pri-story-full-1.jpg" alt=""/>
+            </div>
           </section>
 
-          <section>
-            <img src="assets/pri-story-detail.jpg" alt=""/>
-          </section>
         </section>
 
         <section>
 
           <section>
-            <p><small class="gray">Step Four</small></p>
+            <p><small class="blue">Step Four</small></p>
             <h2>Make More Templates!</h2>
-            <p>Use what you have learned...</p>
+            <p class="gray">Mind what you have learned...</p>
           </section>
 
           <section>
-            <p><small class="gray">Analyze Your Content</small></p>
+            <p><small class="blue">Analyze Your Content</small></p>
             <h2>What Should Go on the Home Page?</h2>
-            <p>Why people are coming here Again? For Stories!</p>
+            <p class="gray">Why people are coming here Again? For Stories!</p>
           </section>
 
           <section>
@@ -319,7 +317,7 @@
           <section>
             <h3>The Story Item</h3>
             <ul>
-            <small>
+            <p>
               <li>Title</li>
               <li>Date</li>
               <li>Section</li>
@@ -327,7 +325,7 @@
               <li>Lede text</li>
               <li>Lede image</li>
               <li>Share count</li>
-            </small>
+            </p>
             </ul>
           </section>
 
@@ -377,8 +375,15 @@
           </section>
 
           <section>
-            <img src="assets/pri-home-full.jpg" alt=""/>
+            <div style="position:relative; left:0; top:0;">
+              <img style="position:relative; left:0; top:0;" class="" src="assets/pri-home-full.jpg" alt=""/>
+              <img style="position:absolute; left:348px; top:0; width:266px; height:666px;" class="fragment" src="assets/pri-home-full-1.jpg" alt=""/>
+              <img style="position:absolute; left:348px; top:0; width:266px; height:666px;" class="fragment" src="assets/pri-home-full-2.jpg" alt=""/>
+              <img style="position:absolute; left:348px; top:0; width:266px; height:666px;" class="fragment" src="assets/pri-home-full-3.jpg" alt=""/>
+              <img style="position:absolute; left:348px; top:0; width:266px; height:666px;" class="fragment" src="assets/pri-home-full-4.jpg" alt=""/>
+            </div>
           </section>
+
 
           <section>
             <p><small class="gray">The Good News</small></p>
@@ -387,20 +392,24 @@
           </section>
 
           <section>
-            <img src="assets/pri-list-full.jpg" alt=""/>
+            <div style="position:relative; left:0; top:0;">
+              <img style="position:relative; left:0; top:0;" class="" src="assets/pri-list-full.jpg" alt=""/>
+              <img style="position:absolute; left:350px; top:0; width:259px; height:666px;" class="fragment" src="assets/pri-list-full-1.jpg" alt=""/>
+              <img style="position:absolute; left:350px; top:0; width:259px; height:666px;" class="fragment" src="assets/pri-list-full-2.jpg" alt=""/>
+            </div>
           </section>
 
         </section>
 
         <section>
           <p class="bigtext">What does that have to do with Drupal?</p>
-          <p class="bigtext fragment">Drupal is based on design systems</p>
+          <p class="bigtext fragment">Drupal is a CMS, which is a system.</p>
         </section>
 
         <section>
           <section>
             <p><small class="gray">Step One</small></p>
-            <h2>Color and Font</h2>
+            <h2>Type and Color</h2>
             <p>Drupal doesn't care</p>
           </section>
         </section>
