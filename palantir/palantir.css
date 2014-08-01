@@ -158,3 +158,25 @@ q:after {
 
 p.bigtext {
   font-size: 150%; }
+
+/*********************************************
+ * CUSTOM CLASSES (Grady)
+  *********************************************/
+.reveal small {
+  font-size: 82%;
+}
+
+.gray {
+  opacity: .5;
+}
+
+.blue {
+  color: #11aea6;
+  opacity: .95;
+}
+
+.image-build {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
