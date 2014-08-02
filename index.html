@@ -404,7 +404,7 @@
 
         <section>
           <section>
-            <p><small class="gray">Step One</small></p>
+            <p><small class="blue">Step One</small></p>
             <h2>Type and Color</h2>
             <p>Drupal doesn't care</p>
           </section>
@@ -412,13 +412,13 @@
 
         <section>
           <section>
-            <p><small class="gray">Step Two</small></p>
+            <p><small class="blue">Step Two</small></p>
             <h2>Get to know your content</h2>
           </section>
 
           <section>
             <p>In the biz, this is called Content Strategy</p>
-            <p clas="fragment">Specifically, Data Modeling</p>
+            <p class="fragment">Specifically, Data Modeling</p>
           </section>
 
           <section>
@@ -436,13 +436,11 @@
               <li>Lede image credit</li>
               <li>Program sound clip</li>
               <li>Inline embedded content</li>
-              <li class="late-show">Comments</li>
+              <li>Comments</li>
               <li>Share controls</li>
               <li>Taxonomy</li>
               <li>External links</li>
               <li>Related content</li>
-              <li class="late-show">Newest / Most Commented / Most Shared</li>
-              <li class="late-show">Ad spaces(2)</li>
             </ul>
             <aside class="notes">
               <ul>
@@ -454,22 +452,26 @@
             <h2>Build spec</h2>
             <blockquote>Proper prior planning prevents piss poor performance</blockquote>
             <p>&mdash;<a href="http://en.wikipedia.org/wiki/7_Ps_%28military_adage%29">British military adage</a></p>
-            <p><a href="">Palantir Build Spec</a></p>
+            <p><a href="http://bit.ly/palantir-build-spec">http://bit.ly/palantir-build-spec</a></p>
           </section>
           <section>
             <h2>Build spec</h2>
-            <img src="" alt="The Palantir Build Spec spreadsheet" />
+            <img src="assets/palantir-build-spec-fields.png" alt="The Palantir Build Spec spreadsheet" />
+          </section>
+          <section>
+            <h2>Build spec</h2>
+            <img src="assets/palantir-build-spec-nodes.png" alt="The Palantir Build Spec spreadsheet" />
           </section>
           <section>
             <img src="assets/drupal-manage-fields.png" alt="Content Type config page" />
           </section>
           <section>
-            <img src="assets/drupal-node-edit-2.png" alt="Node edit page" />
+            <img src="assets/drupal-node-edit.png" alt="Node edit page" />
           </section>
         </section>
         <section>
           <section>
-            <p><small class="gray">Step Three</small></p>
+            <p><small class="blue">Step Three</small></p>
             <h2>Create components and templates</h2>
           </section>
           <section>
@@ -491,7 +493,8 @@
             <img src="assets/drupal-node-view-unthemed.png" alt="Unstyled Full View Mode" />
           </section>
           <section>
-            CSS for styling full view mode
+            <p>Sprinkle magic theming fairy dust</p>
+            <p class="fragment"><code>node-full.tpl.php</code> + CSS</p>
           </section>
           <section>
             <img src="assets/pri-story-full.jpg" alt="Themed page" />
@@ -499,20 +502,20 @@
         </section>
         <section>
           <section>
-            <p><small class="gray">Step Four</small></p>
+            <p><small class="blue">Step Four</small></p>
             <h2>More components, more templates!</h2>
           </section>
           <section>
-            <h2>Illustrated small (image style)</h2>
+            <h2>Illustrated list (image style)</h2>
             <img src="assets/drupal-image-style-configuration.png" alt="Image style configuration" />
           </section>
           <section>
-            <h2>Illustrated small (view mode)</h2>
+            <h2>Illustrated list (view mode)</h2>
             <img src="assets/drupal-view-mode-create.png" alt="Create new View mode" />
           </section>
           <section>
-            <h2>Illustrated small (view mode)</h2>
-            <img src="assets/drupal-manage-display-illustrated-small.png" alt="Configure Illustrated Small view mode" />
+            <h2>Illustrated list (view mode)</h2>
+            <img src="assets/drupal-manage-display-illustrated-list.png" alt="Configure Illustrated list view mode" />
             <aside class="notes">
               <ul>Where does this actually get used...?</ul>
             </aside>
@@ -529,22 +532,30 @@
             </video>
           </section>
           <section>
-            <img src="assets/pri-home-story-section.jpg" alt="Styled Illustrated List - same image as before?" />
+            <img src="assets/pri-home-story-list.jpg" alt="Styled Illustrated List" />
+          </section>
+          <section>
+            <img src="assets/pri-home-full.jpg" alt="Illustrated list on list page" />
+            <img src="assets/pri-list-full.jpg" alt="Illustrated list on home page" style="margin-left: 50px;" />
           </section>
         </section>
         <section>
           <section>
-            <h2>Closing Thoughts</h2>
+            <h2>In summary...</h2>
+          </section>
+          <section>
+            <p class="bigtext">Drupal is a very designer-friendly CMS!</p>
+            <p class="bigtext fragment">&hellip; if you design in systems</p>
           </section>
           <section>
             <p>The most important step is understanding your content</p>
             <p class="fragment">...in the abstract</p>
-            <p class="fragment"><a href="http://www.palantir.net/blog/platonic-content">Platonic content</a></p>
+            <p class="fragment"><a href="http://www.palantir.net/blog/platonic-content">http://www.palantir.net/blog/platonic-content</a></p>
           </section>
           <section>
             <p class="">If it's hard to build,<br />your design system could use improvement.</p>
             <p class="fragment">If a design element doesn't fit the system,<br />you probably don't need it.</p>
-            <aside class="fragment">
+            <aside class="notes">
               <ul>
                 <li>Some exec wanted X thing to appear without reason? Stick to the system.</li>
                 <li>"Because it looks pretty" isn't a system.</li>
