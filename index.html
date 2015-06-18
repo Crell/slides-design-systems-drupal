@@ -31,6 +31,11 @@
 
     <style type="text/css">
 
+
+    html.pri .state-background {
+      background-color: #d3401e;
+    }
+
     ul.inline {
       margin: 0;
       padding: 0;
@@ -77,7 +82,7 @@
         <section>
           <h2>Design Systems and Drupal</h2>
           <p>
-            <small>Presented by <a href="http://www.garfieldtech.com/">Larry Garfield</a> (<a href="http://twitter.com/Crell">@Crell</a>)</small>
+            <small>Presented by <a href="http://www.garfieldtech.com/">Larry Garfield</a> (<a href="http://twitter.com/Crell">@Crell</a>) and <a href="http://carl-martens.com/">Carl Martens</a></small>
           </p>
         </section>
         <section>
@@ -91,10 +96,27 @@
             <li>Loveable pedant</li>
           </ul>
         </section>
+
+        <section>
+          <h2><a href="http://carl-martens.com">Carl Martens</a></h2>
+          <img src="palantir/palantirnet-logo-4c-reversed.svg" alt="Palantir.net Pays me, too!" style="width: 300px; float: right;" />
+          <ul>
+            <li>Senior Designer, <a href="http://www.palantir.net/">Palantir.net</a></li>
+            <li>I live here in Minnesota!</li>
+          </ul>
+        </section>
+
         <section>
           <section>
             <p class="blue"><small>The Key to Design Nirvana</small></p>
             <h2><em>Think Systems</em>, Not Pages.</h2>
+            <aside class="notes">
+            <ul>
+              <li>First we'll take a look at what a design system is.</li>
+              <li>Then we'll go through an example and explain how to implement and develop a system.</li>
+              <li>And then show how thinking in systems can be the common language between design and development.</li>
+            </ul>
+          </aside>
           </section>
           <section>
             <h2>Why Design in Systems?</h2>
@@ -105,9 +127,9 @@
             </ul>
             <aside class="notes">
               <ul>
-                <li>Consistency: Aesthetics, UX, wayfinding. Patterns.</li>
-                <li>Efficiency: Don't design 8500 pages. Helps inform design decisions later.</li>
-                <li>Sustainability: Life beyond you. Natural evolutionary paths.</li>
+                <li><strong>Consistency:</strong> Aesthetics, UX, Patterns.</li>
+                <li><strong>Efficiency:</strong> Don't design 100s of pages. Allow the system to help inform design decisions later.</li>
+                <li><strong>Sustainability:</strong> Life beyond you. We want to create relationships not dependancies.</li>
               </ul>
             </aside>
           </section>
@@ -148,7 +170,9 @@
           <section>
             <h3>Atomic Design</h3>
             <img src="assets/atomic.png" alt="" style="margin-top:.25em;"/>
-            </p>
+            <aside class="notes">
+            <p>A phrase that Brad Frost coined.</p>
+            </aside>
           </section>
 
           <section>
@@ -165,12 +189,14 @@
 
         </section>
 
-        <section>
-          <img src="assets/pri-home-detail-1.jpg" alt="" />
+        <section data-state='pri'>
+          <img src="assets/pri-logo-white.png" alt="" />
           <aside class="notes">
             <ul>
-              <li>Our case study</li>
-              <li>Talk about the project</li>
+              <li><strong>Public Radio International</strong></li>
+              <li>They develop and distribute public access content for the radio.</li>
+              <li>When they can my Palantir, they were looking for a modern design and responsive site.</li>
+              <li>A destination for people to come and consume, engage and share content.</li>
             </ul>
           </aside>
         </section>
@@ -180,10 +206,19 @@
           <section>
             <p><small class="blue">Step One</small></p>
             <h2>Start at the Beginning</h2>
+            <aside class="notes">
+              <p><strong>Where do you begin?</strong></p>
+              <p>You've met the client, heard their goals, now what?</p>
+            </ul>
+          </aside>
           </section>
 
           <section>
             <img src="assets/pri-colors.jpg" alt=""/>
+            <aside class="notes">
+              <p>Your design should be based on their branding.</p>
+              <p>Use this as your foundation.</p>
+            </aside>
           </section>
 
           <section>
@@ -191,7 +226,8 @@
             <img src="assets/pri-elements-full.jpg" alt="" style="margin-top:.25em;"/>
             </p>
             <aside class="notes">
-              <p>Once you have the color palette and base level elements you can really start to see the beginning of something good.</p>
+              <p>Start work on the type system. Modular scale.</p>
+              <p>Once you have the color palette and base level elements you'll start to see things take shape.</p>
             </aside>
           </section>
 
@@ -203,6 +239,10 @@
             <p><small class="blue">Step Two</small></p>
             <h2>Get to Know Your Content</h2>
             <p class="gray">Why are people coming here?</p>
+            <aside class="notes">
+              <p>This is a vital step. One that shouldn't be overlooked.</p>
+              <p>Clients and sometimes designers/developers get hung up on certain features or blue sky ideas.</p>
+            </aside>
           </section>
 
           <section>
@@ -226,6 +266,10 @@
               <li>External links</li>
               <li>Related content</li>
             </ul>
+            <aside class="notes">
+              <p>Read and listen to stories</p>
+              <p>We run through an exercise and start to capture what makes up a story. What's needed.</p>
+            </aside>
           </section>
 
         </section>
@@ -235,30 +279,47 @@
           <section>
             <p><small class="blue">Step Three</small></p>
             <h2><span class="gray">Combine</span> Colors &amp; Elements <span class="gray">to Create</span> Components<span class="gray">, and Your First</span> Template</h2>
+            <aside class="notes">
+              <p>Start with the whole view of a story and use the elements we just mentioned.</p>
+            </aside>
           </section>
 
           <section>
             <p><small class="">Story Header: Date, Author, Title, Program, Section</small>
             <img src="assets/pri-component-story-header.jpg" alt="" style="margin-top:.25em;"/>
             </p>
+            <aside class="notes">
+              <p><strong>**Disclaimer**</strong></p>
+              <p>Now these are fully finished comps for sake of presentation, but you first start with sketches and low fi wireframes. Getting the form and structure.</p>
+              <p>High level information.</p>
+            </aside>
           </section>
 
           <section>
             <p><small class="">Ad Block</small>
             <img src="assets/pri-component-ad.jpg" alt="" style="margin-top:.25em;"/>
             </p>
+            <aside class="notes">
+              <p>Pay attention to all styling, even ad blocks. How will those look in the design?</p>
+            </aside>
           </section>
 
           <section>
             <p><small class="">Lede Image, caption, credit</small>
             <img src="assets/pri-component-lede.jpg" alt="" style="margin-top:.25em;"/>
             </p>
+            <aside class="notes">
+              <p>We want the lede information to stand out so we know to be aware of proportion and hierarchy.</p>
+            </aside>
           </section>
 
           <section>
             <p><small class="">Share controls</small>
             <img src="assets/pri-component-share.jpg" alt="" style="margin-top:.25em;"/>
             </p>
+            <aside class="notes">
+              <p>Sharing is important and should be readily available to the user.</p>
+            </aside>
           </section>
 
           <section>
@@ -266,6 +327,10 @@
           </section>
           <section>
             <img style="width:205px; height:665px;" src="assets/pri-story-full-1.jpg" alt=""/>
+            <aside class="notes">
+              <p>Here is the full story template... we just scratched the surface.</p>
+              <p>Keep repeating this process. Add to the story.</p>
+            </aside>
           </section>
 
         </section>
@@ -282,6 +347,9 @@
             <p><small class="blue">Analyze Your Content</small></p>
             <h2>What Should Go on the Home Page?</h2>
             <p class="gray">Why people are coming here Again? For Stories!</p>
+            <aside class="notes">
+              <p>The homepage should offer various stories to the user.</p>
+            </aside>
           </section>
 
           <section>
@@ -305,6 +373,10 @@
               <li>External links</li>
               <li>Related content</li>
             </ul>
+            <aside class="notes">
+              <p>We'll need to start refining the full story template into bite size pieces.</p>
+              <p>What's important on a smaller scale?</p>
+            </aside>
           </section>
 
           <section>
@@ -320,6 +392,11 @@
               <li>Share count</li>
             </p>
             </ul>
+            <aside class="notes">
+              <p>You can do another exercise to boil down the story element into a smaller list.</p>
+              <p>This is called a 'Story item'.</p>
+              <p>We need to describe a story without showing the whole thing.</p>
+            </aside>
           </section>
 
           <section>
@@ -329,6 +406,10 @@
               Title, Date, Section, Program, Lede text, Lede image, Share count
             </small>
             </p>
+            <aside class="notes">
+              <p>The homepage needs to be engaging so let's create some variety.</p>
+              <p>Full width featured component.</p>
+            </aside>
           </section>
 
           <section>
@@ -338,6 +419,9 @@
               Title, Date, Section, Program, <span class="gray">Lede text,</span> Lede image, Share count
             </small>
             </p>
+            <aside class="notes">
+              <p>We can create a grid component for additional visual interest.</p>
+            </aside>
           </section>
 
           <section>
@@ -347,6 +431,9 @@
                 Title, Date, Section, Program, <span class="gray">Lede text,</span> Lede image, Share count
               </small>
             </p>
+            <aside class="notes">
+              <p>This list view works perfectly for chronological ordering. Allows users to scroll through multiple story with high efficiency.</p>
+            </aside>
           </section>
 
           <section>
@@ -356,6 +443,9 @@
               Title, <span class="gray">Date,</span> Section, <span class="gray">Program, Lede text,</span> Lede image, <span class="gray">Share count</span>
             </small>
             </p>
+            <aside class="notes">
+              <p>Combination of the square and illustrated list. Allows us to span multiple stories across the page.</p>
+            </aside>
           </section>
 
           <section>
@@ -365,11 +455,19 @@
               Title, Date, Section, <span class="gray">Program, Lede text, Lede image, Share count</span>
             </small>
             </p>
+            <aside class="notes">
+              <p>This is the simplest form but still offers enough information for engagement.</p>
+              <p>Maybe used for a sidebar component for related content.</p>
+            </aside>
           </section>
 
           <section>
             <img style="position:relative; left:0; top:0;" class="" src="assets/pri-home-full.jpg" alt=""/>
+            <aside class="notes">
+              <p>Here is the full view of the homepage.</p>
+            </aside>
           </section>
+
           <section>
             <div style="position:relative; left:0; top:0;">
               <img style="width:266px; height:666px;" src="assets/pri-home-full-1.jpg" alt=""/>
@@ -377,6 +475,10 @@
               <img style="position:absolute; left:348px; top:0; width:266px; height:666px;" class="fragment" src="assets/pri-home-full-3.jpg" alt=""/>
               <img style="position:absolute; left:348px; top:0; width:266px; height:666px;" class="fragment" src="assets/pri-home-full-4.jpg" alt=""/>
             </div>
+            <aside class="notes">
+              <p>By combining these components we created a dynamic and visually pleasing template.</p>
+              <p>Here's the breakdown to recap</p>
+            </aside>
           </section>
 
           <section>
@@ -386,7 +488,15 @@
           </section>
 
           <section>
-              <img src="assets/pri-list-full.jpg" alt=""/>
+            <h3>Atomic Design</h3>
+            <img src="assets/atomic.png" alt="" style="margin-top:.25em;"/>
+          </section>
+
+          <section>
+            <img src="assets/pri-list-full.jpg" alt=""/>
+            <aside class="notes">
+              <p>Create a list view template.</p>
+            </aside>
           </section>
 
           <section>
@@ -394,6 +504,11 @@
               <img style="width:259px; height:666px;" src="assets/pri-list-full-1.jpg" alt=""/>
               <img style="position:absolute; left:350px; top:0; width:259px; height:666px;" class="fragment" src="assets/pri-list-full-2.jpg" alt=""/>
             </div>
+             <aside class="notes">
+              <p>We already have an illustrated list component.</p>
+              <p>...and if there's a need for sidebar content, we have that too.</p>
+              <p>We didn't have to start from scratch, reuse what's already been created.</p>
+            </aside>
           </section>
 
         </section>
