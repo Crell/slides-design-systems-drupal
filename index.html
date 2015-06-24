@@ -1,36 +1,28 @@
 <!doctype html>
 <html lang="en">
-
-  <head>
-    <meta charset="utf-8">
-
-    <title>Design Systems and Drupal</title>
-
-    <meta name="author" content="Larry Garfield">
-
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-    <link rel="stylesheet" href="css/reveal.min.css">
-    <link rel="stylesheet" href="palantir/palantir.css" id="theme">
-
-    <!-- For syntax highlighting -->
-    <link rel="stylesheet" href="lib/css/zenburn.css">
-
-    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
-    <script>
-      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-    </script>
-
-    <!--[if lt IE 9]>
-    <script src="lib/js/html5shiv.js"></script>
-    <![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Design Systems and Drupal</title>
+  <meta name="author" content="Larry Garfield">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="palantirnet-theme/css/styles.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'palantirnet-theme/css/print/pdf.css' : 'palantirnet-theme/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->
 
 
     <style type="text/css">
-
 
     html.pri .state-background {
       background-color: #d3401e;
@@ -71,14 +63,28 @@
       list-style-type: none;
     }
 
+    .highlight-text {
+      color: #fb6500;
+    }
+
+    .passive-text {
+      color: #9fc855;
+    }
+
     </style>
 
-    <script src="palantir/classer.js"></script>
+    <script src="palantirnet-theme/js/classer.js"></script>
 
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
+
+</head>
+<!-- Change body class to "dark" if you prefer a dark theme, or "light" if you'd rather have a light theme-->
+<body class="light">
+<div class="reveal">
+  <div class="logo">
+    <p>Palantir.net</p>
+  </div>
+  <!-- Any section element inside of this container is displayed as a slide -->
+     <div class="slides">
         <section>
           <h2>Design Systems and Drupal</h2>
           <p>
@@ -87,7 +93,7 @@
         </section>
         <section>
           <h2><a href="http://twitter.com/Crell">@Crell</a></h2>
-          <img src="palantir/palantirnet-logo-4c-reversed.svg" alt="Palantir.net Pays me, too!" style="width: 300px; float: right;" />
+          <img src="palantirnet-theme/imgs/palantirnet-logo.svg" alt="Palantir.net Pays me!" style="width: 300px; float: right;" />
           <ul>
             <li>Senior Architect, <a href="http://www.palantir.net/">Palantir.net</a></li>
             <li>Drupal 8 Web Services Lead</li>
@@ -99,7 +105,7 @@
 
         <section>
           <h2><a href="http://carl-martens.com">Carl Martens</a></h2>
-          <img src="palantir/palantirnet-logo-4c-reversed.svg" alt="Palantir.net Pays me, too!" style="width: 300px; float: right;" />
+          <img src="palantirnet-theme/imgs/palantirnet-logo.svg" alt="Palantir.net Pays me!" style="width: 300px; float: right;" />
           <ul>
             <li>Senior Designer, <a href="http://www.palantir.net/">Palantir.net</a></li>
             <li>I live here in Minnesota!</li>
@@ -108,7 +114,7 @@
 
         <section>
           <section>
-            <p class="blue"><small>The Key to Design Nirvana</small></p>
+            <p class="highlight-text"><small>The Key to Design Nirvana</small></p>
             <h2><em>Think Systems</em>, Not Pages.</h2>
             <aside class="notes">
             <ul>
@@ -121,9 +127,9 @@
           <section>
             <h2>Why Design in Systems?</h2>
             <ul>
-              <li class="fragment">Consistency <span class="blue">(Visual + Content)</span></li>
-              <li class="fragment">Efficiency <span class="blue">(Production)</span></li>
-              <li class="fragment">Sustainability <span class="blue">(Life After Us)</span></li>
+              <li class="fragment">Consistency <span class="highlight-text">(Visual + Content)</span></li>
+              <li class="fragment">Efficiency <span class="highlight-text">(Production)</span></li>
+              <li class="fragment">Sustainability <span class="highlight-text">(Life After Us)</span></li>
             </ul>
             <aside class="notes">
               <ul>
@@ -135,35 +141,35 @@
           </section>
 
           <section>
-            <p class="blue">
+            <p class="highlight-text">
               <small>sys•tem | ˈsistəm | <em>noun</em></small>
             </p>
-            <h2><span class="gray">A set of</span> interconnected parts <span class="gray">forming a</span> complex whole<span class="gray">.</span></h2>
+            <h2><span class="passive-text">A set of</span> interconnected parts <span class="passive-text">forming a</span> complex whole<span class="passive-text">.</span></h2>
           </section>
 
           <section>
-            <p><small class="blue">Interconnected Parts</small></p>
+            <p><small class="highlight-text">Interconnected Parts</small></p>
             <h3>Elements, Components, Templates</h3>
             <br/>
-            <p><small class="gray">Complex Whole</small></p>
-            <h3 class="gray">A CMS-Driven Site</h3>
+            <p><small class="passive-text">Complex Whole</small></p>
+            <h3 class="passive-text">A CMS-Driven Site</h3>
           </section>
 
           <section>
-            <p><small class="blue">Interconnected Parts</small></p>
-            <h3>Elements<span class="gray">, Components, Templates</span></h3>
+            <p><small class="highlight-text">Interconnected Parts</small></p>
+            <h3>Elements<span class="passive-text">, Components, Templates</span></h3>
             <p>H1–H6, p, a, ul, ol, hr, blockquote, form elements, etc.</p>
           </section>
 
           <section>
-            <p><small class="blue">Interconnected Parts</small></p>
-            <h3><span class="gray">Elements,</span> Components<span class="gray">, Templates</span></h3>
+            <p><small class="highlight-text">Interconnected Parts</small></p>
+            <h3><span class="passive-text">Elements,</span> Components<span class="passive-text">, Templates</span></h3>
             <p>Header, footer, navigation, hero element, call-to-action, etc.</p>
           </section>
 
           <section>
-            <p><small class="blue">Interconnected Parts</small></p>
-            <h3><span class="gray">Elements, Components,</span> Templates</h3>
+            <p><small class="highlight-text">Interconnected Parts</small></p>
+            <h3><span class="passive-text">Elements, Components,</span> Templates</h3>
             <p>General page, home page, landing page, listing page, etc.</p>
           </section>
 
@@ -176,10 +182,10 @@
           </section>
 
           <section>
-            <p><small class="gray">Interconnected Parts</small></p>
-            <h3 class="gray">Elements, Components, Templates</h3>
+            <p><small class="passive-text">Interconnected Parts</small></p>
+            <h3 class="passive-text">Elements, Components, Templates</h3>
             <br/>
-            <p><small class="blue">Complex Whole</small></p>
+            <p><small class="highlight-text">Complex Whole</small></p>
             <h3>A CMS-Driven Site</h3>
           </section>
 
@@ -204,7 +210,7 @@
         <section>
 
           <section>
-            <p><small class="blue">Step One</small></p>
+            <p><small class="highlight-text">Step One</small></p>
             <h2>Start at the Beginning</h2>
             <aside class="notes">
               <p><strong>Where do you begin?</strong></p>
@@ -236,9 +242,9 @@
         <section>
 
           <section>
-            <p><small class="blue">Step Two</small></p>
+            <p><small class="highlight-text">Step Two</small></p>
             <h2>Get to Know Your Content</h2>
-            <p class="gray">Why are people coming here?</p>
+            <p class="passive-text">Why are people coming here?</p>
             <aside class="notes">
               <p>This is a vital step. One that shouldn't be overlooked.</p>
               <p>Clients and sometimes designers/developers get hung up on certain features or blue sky ideas.</p>
@@ -277,8 +283,8 @@
         <section>
 
           <section>
-            <p><small class="blue">Step Three</small></p>
-            <h2><span class="gray">Combine</span> Colors &amp; Elements <span class="gray">to Create</span> Components<span class="gray">, and Your First</span> Template</h2>
+            <p><small class="highlight-text">Step Three</small></p>
+            <h2><span class="passive-text">Combine</span> Colors &amp; Elements <span class="passive-text">to Create</span> Components<span class="passive-text">, and Your First</span> Template</h2>
             <aside class="notes">
               <p>Start with the whole view of a story and use the elements we just mentioned.</p>
             </aside>
@@ -338,15 +344,15 @@
         <section>
 
           <section>
-            <p><small class="blue">Step Four</small></p>
+            <p><small class="highlight-text">Step Four</small></p>
             <h2>Make More Templates!</h2>
-            <p class="gray">Mind what you have learned...</p>
+            <p class="passive-text">Mind what you have learned...</p>
           </section>
 
           <section>
-            <p><small class="blue">Analyze Your Content</small></p>
+            <p><small class="highlight-text">Analyze Your Content</small></p>
             <h2>What Should Go on the Home Page?</h2>
-            <p class="gray">Why people are coming here Again? For Stories!</p>
+            <p class="passive-text">Why people are coming here Again? For Stories!</p>
             <aside class="notes">
               <p>The homepage should offer various stories to the user.</p>
             </aside>
@@ -416,7 +422,7 @@
             <p>Story Item: Square Featured
               <img src="assets/pri-home-story-square.jpg" alt=""/>
             <small>
-              Title, Date, Section, Program, <span class="gray">Lede text,</span> Lede image, Share count
+              Title, Date, Section, Program, <span class="passive-text">Lede text,</span> Lede image, Share count
             </small>
             </p>
             <aside class="notes">
@@ -428,7 +434,7 @@
             <p>Story Item: Illustrated List
               <img src="assets/pri-home-story-list.jpg" alt=""/>
               <small>
-                Title, Date, Section, Program, <span class="gray">Lede text,</span> Lede image, Share count
+                Title, Date, Section, Program, <span class="passive-text">Lede text,</span> Lede image, Share count
               </small>
             </p>
             <aside class="notes">
@@ -440,7 +446,7 @@
             <p>Story Item: Illustrated List Compact
               <img src="assets/pri-home-story-section.jpg" alt=""/>
             <small>
-              Title, <span class="gray">Date,</span> Section, <span class="gray">Program, Lede text,</span> Lede image, <span class="gray">Share count</span>
+              Title, <span class="passive-text">Date,</span> Section, <span class="passive-text">Program, Lede text,</span> Lede image, <span class="passive-text">Share count</span>
             </small>
             </p>
             <aside class="notes">
@@ -452,7 +458,7 @@
             <p>Story Item: List Compact
               <img src="assets/pri-story-list-compact.jpg" alt=""/>
             <small>
-              Title, Date, Section, <span class="gray">Program, Lede text, Lede image, Share count</span>
+              Title, Date, Section, <span class="passive-text">Program, Lede text, Lede image, Share count</span>
             </small>
             </p>
             <aside class="notes">
@@ -482,7 +488,7 @@
           </section>
 
           <section>
-            <p><small class="gray">The Good News</small></p>
+            <p><small class="passive-text">The Good News</small></p>
             <h2>Creating Another Page Gets Easier Every Time</h2>
             <p></p>
           </section>
@@ -520,7 +526,7 @@
 
         <section>
           <section>
-            <p><small class="blue">Step One</small></p>
+            <p><small class="highlight-text">Step One</small></p>
             <h2>Type and Color</h2>
             <p>Drupal doesn't care</p>
           </section>
@@ -528,7 +534,7 @@
 
         <section>
           <section>
-            <p><small class="blue">Step Two</small></p>
+            <p><small class="highlight-text">Step Two</small></p>
             <h2>Get to know your content</h2>
           </section>
 
@@ -587,7 +593,7 @@
         </section>
         <section>
           <section>
-            <p><small class="blue">Step Three</small></p>
+            <p><small class="highlight-text">Step Three</small></p>
             <h2>Create components and templates</h2>
           </section>
           <section>
@@ -618,7 +624,7 @@
         </section>
         <section>
           <section>
-            <p><small class="blue">Step Four</small></p>
+            <p><small class="highlight-text">Step Four</small></p>
             <h2>More components,<br />more templates!</h2>
           </section>
           <section>
@@ -691,43 +697,36 @@
           <p>Keep tabs on our work at <a href="http://twitter.com/Palantir">@Palantir</a></p>
         </section>
       </div>
-    </div>
 
-    <footer class="palantir-logo">
-      <a href="http://www.palantir.net/"><img src="palantir/palantirnet-logo-4c-reversed.svg" alt="Palantir.net logo" height="37" /></a>
-    </footer>
+</div>
 
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.min.js"></script>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
 
-    <script>
+<script>
 
-      // Full list of configuration options available here:
-      // https://github.com/hakimel/reveal.js#configuration
-      Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
+  // Full list of configuration options available at:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
 
-        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+    transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-        // Parallax scrolling
-        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-        // parallaxBackgroundSize: '2100px 900px',
+    // Optional reveal.js plugins
+    dependencies: [
+      { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'plugin/zoom-js/zoom.js', async: true },
+      { src: 'plugin/notes/notes.js', async: true }
+    ]
+  });
 
-        // Optional libraries used to extend on reveal.js
-        dependencies: [
-          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-        ]
-      });
+</script>
 
-    </script>
-  </body>
+</body>
 </html>
