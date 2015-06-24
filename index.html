@@ -24,8 +24,7 @@
 
     <style type="text/css">
 
-    html.pri .state-background {
-      background-color: #d3401e;
+    img.graphic {
     }
 
     ul.inline {
@@ -69,6 +68,11 @@
 
     .passive-text {
       color: #9fc855;
+    }
+
+    img.screenshot {
+      border-radius: 5px;
+      width: 900px;
     }
 
     </style>
@@ -175,9 +179,9 @@
 
           <section>
             <h3>Atomic Design</h3>
-            <img src="assets/atomic.png" alt="" style="margin-top:.25em;"/>
+            <img src="assets/atomic.png" alt="Atomic design" style="margin-top:.25em;" class="graphic"/>
             <aside class="notes">
-            <p>A phrase that Brad Frost coined.</p>
+              <p>A phrase that Brad Frost coined.</p>
             </aside>
           </section>
 
@@ -195,7 +199,7 @@
 
         </section>
 
-        <section data-state='pri'>
+        <section data-background="#d3401e">
           <img src="assets/pri-logo-white.png" alt="" />
           <aside class="notes">
             <ul>
@@ -351,7 +355,7 @@
 
           <section>
             <p><small class="highlight-text">Analyze Your Content</small></p>
-            <h2>What Should Go on the Home Page?</h2>
+            <h2>What Should Go on the<br />Home Page?</h2>
             <p class="passive-text">Why people are coming here Again? For Stories!</p>
             <aside class="notes">
               <p>The homepage should offer various stories to the user.</p>
@@ -495,7 +499,7 @@
 
           <section>
             <h3>Atomic Design</h3>
-            <img src="assets/atomic.png" alt="" style="margin-top:.25em;"/>
+            <img src="assets/atomic.png" alt="" style="margin-top:.25em;" class="graphic"/>
           </section>
 
           <section>
@@ -578,17 +582,17 @@
           </section>
           <section>
             <h2>Build spec</h2>
-            <img src="assets/palantir-build-spec-fields.png" alt="The Palantir Build Spec spreadsheet" />
+            <img src="assets/palantir-build-spec-fields.png" alt="The Palantir Build Spec spreadsheet" class="screenshot" />
           </section>
           <section>
             <h2>Build spec</h2>
-            <img src="assets/palantir-build-spec-nodes.png" alt="The Palantir Build Spec spreadsheet" />
+            <img src="assets/palantir-build-spec-nodes.png" alt="The Palantir Build Spec spreadsheet" class="screenshot" />
           </section>
           <section>
-            <img src="assets/drupal-manage-fields.png" alt="Content Type config page" />
+            <img src="assets/drupal-manage-fields.png" alt="Content Type config page" class="screenshot" />
           </section>
           <section>
-            <img src="assets/drupal-node-edit.png" alt="Node edit page" />
+            <img src="assets/drupal-node-edit.png" alt="Node edit page" class="screenshot" />
           </section>
         </section>
         <section>
@@ -602,7 +606,7 @@
             <p class="fragment">Component == View Modes!</p>
           </section>
           <section>
-            <img src="assets/drupal-manage-display-full.png" alt="Full View mode configuration" />
+            <img src="assets/drupal-manage-display-full.png" alt="Full View mode configuration" class="screenshot" />
             <aside class="notes">
               <ul>
                 <li>Show only some fields</li>
@@ -612,7 +616,7 @@
             </aside>
           </section>
           <section>
-            <img src="assets/drupal-node-view-unthemed.png" alt="Unstyled Full View Mode" />
+            <img src="assets/drupal-node-view-unthemed.png" alt="Unstyled Full View Mode" class="screenshot" style="width: 750px;" />
           </section>
           <section>
             <p>Sprinkle magic theming fairy dust</p>
@@ -629,15 +633,15 @@
           </section>
           <section>
             <h2>Illustrated list (image style)</h2>
-            <img src="assets/drupal-image-style-configuration.png" alt="Image style configuration" />
+            <img src="assets/drupal-image-style-configuration.png" alt="Image style configuration" class="screenshot" />
           </section>
           <section>
             <h2>Illustrated list (view mode)</h2>
-            <img src="assets/drupal-view-mode-create.png" alt="Create new View mode" />
+            <img src="assets/drupal-view-mode-create.png" alt="Create new View mode" class="screenshot" />
           </section>
           <section>
             <h2>Illustrated list (view mode)</h2>
-            <img src="assets/drupal-manage-display-illustrated-list.png" alt="Configure Illustrated list view mode" />
+            <img src="assets/drupal-manage-display-illustrated-list.png" alt="Configure Illustrated list view mode" class="screenshot" />
             <aside class="notes">
               <ul>Where does this actually get used...?</ul>
             </aside>
@@ -654,7 +658,7 @@
             </video>
           </section>
           <section>
-            <img src="assets/pri-home-story-list.jpg" alt="Styled Illustrated List" />
+            <img src="assets/pri-home-story-list.jpg" alt="Styled Illustrated List" class="screenshot" />
           </section>
           <section>
             <img src="assets/pri-home-full.jpg" style="width: 40%; position: relative; top: -0.7em" alt="Illustrated list on list page" />
