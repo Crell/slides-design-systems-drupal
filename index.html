@@ -42,7 +42,7 @@
     vertically un-centered slides */
     .reveal .slides>section,
     .reveal .slides>section>section {
-      padding: 0px;
+      padding: 0;
     }
 
     .reveal h2 + p.bigtext,
@@ -105,7 +105,7 @@
         <section>
           <h2>Design Systems and Drupal</h2>
           <p>
-            <small>Presented by <a href="http://www.garfieldtech.com/">Larry Garfield</a> (<a href="http://twitter.com/Crell">@Crell</a>) and <a href="http://carl-martens.com/">Carl Martens</a></small>
+            <small>Presented by <a href="http://www.garfieldtech.com/">Larry Garfield</a> (<a href="http://twitter.com/Crell">@Crell</a>)</small>
           </p>
         </section>
         <section>
@@ -121,23 +121,12 @@
         </section>
 
         <section>
-          <h2><a href="http://carl-martens.com">Carl Martens</a></h2>
-          <img src="palantirnet-theme/imgs/palantirnet-logo.svg" alt="Palantir.net Pays me!" style="width: 300px; float: right;" />
-          <ul>
-            <li>Senior Designer, <a href="http://www.palantir.net/">Palantir.net</a></li>
-            <li>I live here in Minnesota!</li>
-          </ul>
-        </section>
-
-        <section>
           <section>
             <p class="highlight-text"><small>The Key to Design Nirvana</small></p>
             <h2><em>Think Systems</em>, Not Pages.</h2>
             <aside class="notes">
             <ul>
-              <li>First we'll take a look at what a design system is.</li>
-              <li>Then we'll go through an example and explain how to implement and develop a system.</li>
-              <li>And then show how thinking in systems can be the common language between design and development.</li>
+              <li>Systems are how we unify everything</li>
             </ul>
           </aside>
           </section>
@@ -210,7 +199,7 @@
           </section>
 
           <section>
-            <img src="assets/druplicon.svg" style="width: 40%; border: 0px; background: transparent; border: 0px;" alt="Druplicon" />
+            <img src="assets/druplicon.svg" style="width: 40%; border: 0; background: transparent;" alt="Druplicon" />
           </section>
 
         </section>
@@ -233,9 +222,10 @@
             <p><small class="highlight-text">Step One</small></p>
             <h2>Start at the Beginning</h2>
             <aside class="notes">
-              <p><strong>Where do you begin?</strong></p>
-              <p>You've met the client, heard their goals, now what?</p>
-            </ul>
+              <ul>
+                <li><strong>Where do you begin?</strong></li>
+                <li>You've met the client, heard their goals, now what?</li>
+              </ul>
           </aside>
           </section>
 
@@ -266,8 +256,10 @@
             <h2>Get to Know Your Content</h2>
             <p class="passive-text">Why are people coming here?</p>
             <aside class="notes">
-              <p>This is a vital step. One that shouldn't be overlooked.</p>
-              <p>Clients and sometimes designers/developers get hung up on certain features or blue sky ideas.</p>
+              <ul>
+                <li>This is a vital step. One that shouldn't be overlooked.</li>
+                <li>Clients and sometimes designers/developers get hung up on certain features or blue sky ideas.</li>
+              </ul>
             </aside>
           </section>
 
@@ -293,8 +285,10 @@
               <li>Related content</li>
             </ul>
             <aside class="notes">
-              <p>Read and listen to stories</p>
-              <p>We run through an exercise and start to capture what makes up a story. What's needed.</p>
+              <ul>
+                <li>Read and listen to stories</li>
+                <li>We run through an exercise and start to capture what makes up a story. What's needed.</li>
+              </ul>
             </aside>
           </section>
 
@@ -306,7 +300,9 @@
             <p><small class="highlight-text">Step Three</small></p>
             <h2><span class="passive-text">Combine</span> Colors &amp; Elements <span class="passive-text">to Create</span> Components<span class="passive-text">, and Your First</span> Template</h2>
             <aside class="notes">
-              <p>Start with the whole view of a story and use the elements we just mentioned.</p>
+              <ul>
+                <li>Start with the whole view of a story and use the elements we just mentioned.</li>
+              </ul>
             </aside>
           </section>
 
@@ -315,9 +311,10 @@
             <img src="assets/pri-component-story-header.jpg" alt="" style="margin-top:.25em;"/>
             </p>
             <aside class="notes">
-              <p><strong>**Disclaimer**</strong></p>
-              <p>Now these are fully finished comps for sake of presentation, but you first start with sketches and low fi wireframes. Getting the form and structure.</p>
-              <p>High level information.</p>
+              <ul>
+                <li>Disclaimer: Showing finished compos; start with sketches for form and strucgture.</li>
+                <li>High level information.</li>
+              </ul>
             </aside>
           </section>
 
@@ -326,7 +323,9 @@
             <img src="assets/pri-component-ad.jpg" alt="" style="margin-top:.25em;"/>
             </p>
             <aside class="notes">
-              <p>Pay attention to all styling, even ad blocks. How will those look in the design?</p>
+              <ul>
+                <li>Pay attention to all styling, even ad blocks. How will those look in the design?</li>
+              </ul>
             </aside>
           </section>
 
@@ -335,7 +334,9 @@
             <img src="assets/pri-component-lede.jpg" alt="" style="margin-top:.25em;"/>
             </p>
             <aside class="notes">
-              <p>We want the lede information to stand out so we know to be aware of proportion and hierarchy.</p>
+              <ul>
+                <li>We want the lede information to stand out so we know to be aware of proportion and hierarchy.</li>
+              </ul>
             </aside>
           </section>
 
@@ -344,7 +345,9 @@
             <img src="assets/pri-component-share.jpg" alt="" style="margin-top:.25em;"/>
             </p>
             <aside class="notes">
-              <p>Sharing is important and should be readily available to the user.</p>
+              <ul>
+                <li>Sharing is important and should be readily available to the user.</li>
+              </ul>
             </aside>
           </section>
 
@@ -354,15 +357,14 @@
           <section>
             <img style="width:205px; height:665px;" src="assets/pri-story-full-1.jpg" alt=""/>
             <aside class="notes">
-              <p>Here is the full story template... we just scratched the surface.</p>
-              <p>Keep repeating this process. Add to the story.</p>
+              <ul>
+                <li>Here is the full story template... we just scratched the surface.</li>
+                <li>Keep repeating this process. Add to the story.</li>
+              </ul>
             </aside>
           </section>
-
         </section>
-
         <section>
-
           <section>
             <p><small class="highlight-text">Step Four</small></p>
             <h2>Make More Templates!</h2>
@@ -408,7 +410,6 @@
           <section>
             <h3>The Story Item</h3>
             <ul>
-            <p>
               <li>Title</li>
               <li>Date</li>
               <li>Section</li>
@@ -416,7 +417,6 @@
               <li>Lede text</li>
               <li>Lede image</li>
               <li>Share count</li>
-            </p>
             </ul>
             <aside class="notes">
               <p>You can do another exercise to boil down the story element into a smaller list.</p>
@@ -706,8 +706,8 @@
             <p class="fragment bigtext">If a design element doesn't fit the system,<br />you probably don't need it</p>
             <aside class="notes">
               <ul>
-                <li>Some exec wanted X thing to appear without reason? Stick to the system.</li>
                 <li>"Because it looks pretty" isn't a system.</li>
+                <li>Some exec wanted X thing to appear without reason? Stick to the system.</li>
               </ul>
             </aside>
           </section>
@@ -719,7 +719,7 @@
           </section>
         </section>
         <section id="final">
-          <h2>Larry Garfield / Carl Martens</h2>
+          <h2>Larry Garfield</h2>
           <p><a href="http://www.palantir.net/">Palantir.net</a></p>
           <p>Making the Web a Better Place</p>
           <p>Keep tabs on our work at <a href="http://twitter.com/Palantir">@Palantir</a></p>
