@@ -8,21 +8,21 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
   <link rel="stylesheet" href="css/reveal.css">
-  <link rel="stylesheet" href="palantirnet-theme/css/styles.css" id="theme">
+  <link rel="stylesheet" href="platform-reveal/platform-theme/assets/css/styles.css" id="theme">
   <!-- Printing and PDF exports -->
   <script>
     var link = document.createElement( 'link' );
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = window.location.search.match( /print-pdf/gi ) ? 'palantirnet-theme/css/print/pdf.css' : 'palantirnet-theme/css/print/paper.css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'platform-theme/assets/css/print/pdf.css' : 'platform-theme/assets/css/print/paper.css';
     document.getElementsByTagName( 'head' )[0].appendChild( link );
   </script>
+
   <!--[if lt IE 9]>
   <script src="lib/js/html5shiv.js"></script>
   <![endif]-->
 
-
-    <style type="text/css">
+  <style type="text/css">
 
     img.graphic {
     }
@@ -88,648 +88,660 @@
       vertical-align: top;
     }
 
-    </style>
-
-    <script src="palantirnet-theme/js/classer.js"></script>
-
+  </style>
 
 </head>
 <!-- Change body class to "dark" if you prefer a dark theme, or "light" if you'd rather have a light theme-->
 <body class="light">
 <div class="reveal">
   <div class="logo">
-    <p>Palantir.net</p>
+    <p>Platform.sh</p>
   </div>
   <!-- Any section element inside of this container is displayed as a slide -->
-     <div class="slides">
-        <section>
-          <h2>Design Systems and Drupal</h2>
-          <p>
-            <small>Presented by <a href="http://www.garfieldtech.com/">Larry Garfield</a> (<a href="http://twitter.com/Crell">@Crell</a>)</small>
-          </p>
-        </section>
-        <section>
-          <h2><a href="http://twitter.com/Crell">@Crell</a></h2>
-          <img src="palantirnet-theme/imgs/palantirnet-logo.svg" alt="Palantir.net Pays me!" style="width: 300px; float: right;" />
-          <ul>
-            <li>Senior Architect, <a href="http://www.palantir.net/">Palantir.net</a></li>
-            <li>Drupal 8 Web Services Lead</li>
-            <li>Drupal Representative, <a href="http://www.php-fig.org/">PHP-FIG</a></li>
-            <li>Advisor, Drupal Association</li>
-            <li>Loveable pedant</li>
-          </ul>
-        </section>
+  <div class="slides">
 
-        <section>
-          <section>
-            <p class="highlight-text"><small>The Key to Design Nirvana</small></p>
-            <h2><em>Think Systems</em>, Not Pages.</h2>
-            <aside class="notes">
-            <ul>
-              <li>Systems are how we unify everything</li>
-            </ul>
-          </aside>
-          </section>
-          <section>
-            <h2>Why Design in Systems?</h2>
-            <ul>
-              <li class="fragment">Consistency <span class="highlight-text">(Visual + Content)</span></li>
-              <li class="fragment">Efficiency <span class="highlight-text">(Production)</span></li>
-              <li class="fragment">Sustainability <span class="highlight-text">(Life After Us)</span></li>
-            </ul>
-            <aside class="notes">
-              <ul>
-                <li><strong>Consistency:</strong> Aesthetics, UX, Patterns.</li>
-                <li><strong>Efficiency:</strong> Don't design 100s of pages. Allow the system to help inform design decisions later.</li>
-                <li><strong>Sustainability:</strong> Life beyond you. We want to create relationships not dependancies.</li>
-              </ul>
-            </aside>
-          </section>
+    <section>
+      <h1>Design Systems and Drupal</h1>
+      <p>
+        <small>Presented by <a href="http://www.garfieldtech.com/">Larry Garfield</a> (<a href="http://twitter.com/Crell">@Crell</a>)</small>
+      </p>
+    </section>
 
-          <section>
-            <p class="highlight-text">
-              <small>sys•tem | ˈsistəm | <em>noun</em></small>
-            </p>
-            <h2><span class="passive-text">A set of</span> interconnected parts <span class="passive-text">forming a</span> complex whole<span class="passive-text">.</span></h2>
-          </section>
-
-          <section>
-            <p><small class="highlight-text">Interconnected Parts</small></p>
-            <h3>Elements, Components, Templates</h3>
-            <br/>
-            <p><small class="passive-text">Complex Whole</small></p>
-            <h3 class="passive-text">A CMS-Driven Site</h3>
-          </section>
-
-          <section>
-            <p><small class="highlight-text">Interconnected Parts</small></p>
-            <h3>Elements<span class="passive-text">, Components, Templates</span></h3>
-            <p>H1–H6, p, a, ul, ol, hr, blockquote, form elements, etc.</p>
-          </section>
-
-          <section>
-            <p><small class="highlight-text">Interconnected Parts</small></p>
-            <h3><span class="passive-text">Elements,</span> Components<span class="passive-text">, Templates</span></h3>
-            <p>Header, footer, navigation, hero element, call-to-action, etc.</p>
-            <aside class="notes">
-              <p>A component is a visual representation of content.</p>
-            </aside>
-          </section>
-
-          <section>
-            <p><small class="highlight-text">Interconnected Parts</small></p>
-            <h3><span class="passive-text">Elements, Components,</span> Templates</h3>
-            <p>General page, home page, landing page, listing page, etc.</p>
-          </section>
-
-          <section>
-            <h3>Atomic Design</h3>
-            <img src="assets/atomic.png" alt="Atomic design" style="margin-top:.25em;" class="graphic"/>
-            <aside class="notes">
-              <p>A phrase that Brad Frost coined.</p>
-            </aside>
-          </section>
-
-          <section>
-            <p><small class="passive-text">Interconnected Parts</small></p>
-            <h3 class="passive-text">Elements, Components, Templates</h3>
-            <br/>
-            <p><small class="highlight-text">Complex Whole</small></p>
-            <h3>A CMS-Driven Site</h3>
-          </section>
-
-          <section>
-            <img src="assets/druplicon.svg" style="width: 40%; border: 0; background: transparent;" alt="Druplicon" />
-          </section>
-
-        </section>
-
-        <section data-background="#d3401e">
-          <img src="assets/pri-logo-white.png" alt="" />
-          <aside class="notes">
-            <ul>
-              <li><strong>Public Radio International</strong></li>
-              <li>They develop and distribute public access content for the radio.</li>
-              <li>When they can my Palantir, they were looking for a modern design and responsive site.</li>
-              <li>A destination for people to come and consume, engage and share content.</li>
-            </ul>
-          </aside>
-        </section>
-
-        <section>
-
-          <section>
-            <p><small class="highlight-text">Step One</small></p>
-            <h2>Start at the Beginning</h2>
-            <aside class="notes">
-              <ul>
-                <li><strong>Where do you begin?</strong></li>
-                <li>You've met the client, heard their goals, now what?</li>
-              </ul>
-          </aside>
-          </section>
-
-          <section>
-            <img src="assets/pri-colors.jpg" alt=""/>
-            <aside class="notes">
-              <p>Your design should be based on their branding.</p>
-              <p>Use this as your foundation.</p>
-            </aside>
-          </section>
-
-          <section>
-            <p><small class="">Elements: H1–H6, p, a, ul, ol, hr, etc.</small>
-            <img src="assets/pri-elements-full.jpg" alt="" style="margin-top:.25em;"/>
-            </p>
-            <aside class="notes">
-              <p>Start work on the type system. Modular scale.</p>
-              <p>Once you have the color palette and base level elements you'll start to see things take shape.</p>
-            </aside>
-          </section>
-
-        </section>
-
-        <section>
-
-          <section>
-            <p><small class="highlight-text">Step Two</small></p>
-            <h2>Get to Know Your Content</h2>
-            <p class="passive-text">Why are people coming here?</p>
-            <aside class="notes">
-              <ul>
-                <li>This is a vital step. One that shouldn't be overlooked.</li>
-                <li>Clients and sometimes designers/developers get hung up on certain features or blue sky ideas.</li>
-              </ul>
-            </aside>
-          </section>
-
-          <section>
-            <h3>The Story</h3>
-            <ul style="column-count: 2; -webkit-column-count: 2; -moz-column-count: 2; margin-top: 1em;">
-              <li>Title</li>
-              <li>Date</li>
-              <li>Section</li>
-              <li>Author</li>
-              <li>Program</li>
-              <li>Lede text</li>
-              <li>Body text</li>
-              <li>Lede image</li>
-              <li>Lede image caption</li>
-              <li>Lede image credit</li>
-              <li>Program sound clip</li>
-              <li>Inline embedded content</li>
-              <li>Comments</li>
-              <li>Share controls</li>
-              <li>Taxonomy</li>
-              <li>External links</li>
-              <li>Related content</li>
-            </ul>
-            <aside class="notes">
-              <ul>
-                <li>Read and listen to stories</li>
-                <li>We run through an exercise and start to capture what makes up a story. What's needed.</li>
-              </ul>
-            </aside>
-          </section>
-
-        </section>
-
-        <section>
-
-          <section>
-            <p><small class="highlight-text">Step Three</small></p>
-            <h2><span class="passive-text">Combine</span> Colors &amp; Elements <span class="passive-text">to Create</span> Components<span class="passive-text">, and Your First</span> Template</h2>
-            <aside class="notes">
-              <ul>
-                <li>Start with the whole view of a story and use the elements we just mentioned.</li>
-              </ul>
-            </aside>
-          </section>
-
-          <section>
-            <p><small class="">Story Header: Date, Author, Title, Program, Section</small>
-            <img src="assets/pri-component-story-header.jpg" alt="" style="margin-top:.25em;"/>
-            </p>
-            <aside class="notes">
-              <ul>
-                <li>Disclaimer: Showing finished compos; start with sketches for form and strucgture.</li>
-                <li>High level information.</li>
-              </ul>
-            </aside>
-          </section>
-
-          <section>
-            <p><small class="">Ad Block</small>
-            <img src="assets/pri-component-ad.jpg" alt="" style="margin-top:.25em;"/>
-            </p>
-            <aside class="notes">
-              <ul>
-                <li>Pay attention to all styling, even ad blocks. How will those look in the design?</li>
-              </ul>
-            </aside>
-          </section>
-
-          <section>
-            <p><small class="">Lede Image, caption, credit</small>
-            <img src="assets/pri-component-lede.jpg" alt="" style="margin-top:.25em;"/>
-            </p>
-            <aside class="notes">
-              <ul>
-                <li>We want the lede information to stand out so we know to be aware of proportion and hierarchy.</li>
-              </ul>
-            </aside>
-          </section>
-
-          <section>
-            <p><small class="">Share controls</small>
-            <img src="assets/pri-component-share.jpg" alt="" style="margin-top:.25em;"/>
-            </p>
-            <aside class="notes">
-              <ul>
-                <li>Sharing is important and should be readily available to the user.</li>
-              </ul>
-            </aside>
-          </section>
-
-          <section>
-            <img src="assets/pri-story-full-top.jpg" alt=""/>
-          </section>
-          <section>
-            <img style="width:205px; height:665px;" src="assets/pri-story-full-1.jpg" alt=""/>
-            <aside class="notes">
-              <ul>
-                <li>Here is the full story template... we just scratched the surface.</li>
-                <li>Keep repeating this process. Add to the story.</li>
-              </ul>
-            </aside>
-          </section>
-        </section>
-        <section>
-          <section>
-            <p><small class="highlight-text">Step Four</small></p>
-            <h2>Make More Templates!</h2>
-            <p class="passive-text">Mind what you have learned...</p>
-          </section>
-
-          <section>
-            <p><small class="highlight-text">Analyze Your Content</small></p>
-            <h2>What Should Go on the<br />Home Page?</h2>
-            <p class="passive-text">Why people are coming here Again? For Stories!</p>
-            <aside class="notes">
-              <p>The homepage should offer various stories to the user.</p>
-            </aside>
-          </section>
-
-          <section>
-            <h3>The Story</h3>
-            <ul style="column-count: 2; -webkit-column-count: 2; -moz-column-count: 2; margin-top: 1em;">
-              <li>Title</li>
-              <li>Date</li>
-              <li>Section</li>
-              <li>Author</li>
-              <li>Program</li>
-              <li>Lede text</li>
-              <li>Body text</li>
-              <li>Lede image</li>
-              <li>Lede image caption</li>
-              <li>Lede image credit</li>
-              <li>Program sound clip</li>
-              <li>Inline embedded content</li>
-              <li>Comments</li>
-              <li>Share controls</li>
-              <li>Taxonomy</li>
-              <li>External links</li>
-              <li>Related content</li>
-            </ul>
-            <aside class="notes">
-              <p>We'll need to start refining the full story template into bite size pieces.</p>
-              <p>What's important on a smaller scale?</p>
-            </aside>
-          </section>
-
-          <section>
-            <h3>The Story Item</h3>
-            <ul>
-              <li>Title</li>
-              <li>Date</li>
-              <li>Section</li>
-              <li>Program</li>
-              <li>Lede text</li>
-              <li>Lede image</li>
-              <li>Share count</li>
-            </ul>
-            <aside class="notes">
-              <p>You can do another exercise to boil down the story element into a smaller list.</p>
-              <p>This is called a 'Story item'.</p>
-              <p>We need to describe a story without showing the whole thing.</p>
-            </aside>
-          </section>
-
-          <section>
-            <p>Story Item: Lead Feature
-              <img src="assets/pri-home-story-lead.jpg" alt=""/>
-            <small>
-              Title, Date, Section, Program, Lede text, Lede image, Share count
-            </small>
-            </p>
-            <aside class="notes">
-              <p>The homepage needs to be engaging so let's create some variety.</p>
-              <p>Full width featured component.</p>
-            </aside>
-          </section>
-
-          <section>
-            <p>Story Item: Square Featured
-              <img src="assets/pri-home-story-square.jpg" alt=""/>
-            <small>
-              Title, Date, Section, Program, <span class="passive-text">Lede text,</span> Lede image, Share count
-            </small>
-            </p>
-            <aside class="notes">
-              <p>We can create a grid component for additional visual interest.</p>
-            </aside>
-          </section>
-
-          <section>
-            <p>Story Item: Illustrated List
-              <img src="assets/pri-home-story-list.jpg" alt=""/>
-              <small>
-                Title, Date, Section, Program, <span class="passive-text">Lede text,</span> Lede image, Share count
-              </small>
-            </p>
-            <aside class="notes">
-              <p>This list view works perfectly for chronological ordering. Allows users to scroll through multiple story with high efficiency.</p>
-            </aside>
-          </section>
-
-          <section>
-            <p>Story Item: Illustrated List Compact
-              <img src="assets/pri-home-story-section.jpg" alt=""/>
-            <small>
-              Title, <span class="passive-text">Date,</span> Section, <span class="passive-text">Program, Lede text,</span> Lede image, <span class="passive-text">Share count</span>
-            </small>
-            </p>
-            <aside class="notes">
-              <p>Combination of the square and illustrated list. Allows us to span multiple stories across the page.</p>
-            </aside>
-          </section>
-
-          <section>
-            <p>Story Item: List Compact
-              <img src="assets/pri-story-list-compact.jpg" alt=""/>
-            <small>
-              Title, Date, Section, <span class="passive-text">Program, Lede text, Lede image, Share count</span>
-            </small>
-            </p>
-            <aside class="notes">
-              <p>This is the simplest form but still offers enough information for engagement.</p>
-              <p>Maybe used for a sidebar component for related content.</p>
-            </aside>
-          </section>
-
-          <section>
-            <img style="position:relative; left:0; top:0;" class="" src="assets/pri-home-full-top.jpg" alt=""/>
-            <aside class="notes">
-              <p>Here is the full view of the homepage.</p>
-            </aside>
-          </section>
-
-          <section>
-            <div style="position:relative; left:0; top:0;">
-              <img style="width:266px; height:666px;" src="assets/pri-home-full-1.jpg" alt=""/>
-              <img style="position:absolute; left:348px; top:0; width:266px; height:666px;" class="fragment" src="assets/pri-home-full-2.jpg" alt=""/>
-              <img style="position:absolute; left:348px; top:0; width:266px; height:666px;" class="fragment" src="assets/pri-home-full-3.jpg" alt=""/>
-              <img style="position:absolute; left:348px; top:0; width:266px; height:666px;" class="fragment" src="assets/pri-home-full-4.jpg" alt=""/>
-            </div>
-            <aside class="notes">
-              <p>By combining these components we created a dynamic and visually pleasing template.</p>
-              <p>Here's the breakdown to recap</p>
-            </aside>
-          </section>
-
-          <section>
-            <p><small class="highlight-text">The Good News</small></p>
-            <h2>Creating Another Page Gets Easier Every Time</h2>
-            <p></p>
-          </section>
-
-          <section>
-            <h3>Atomic Design</h3>
-            <img src="assets/atomic.png" alt="" style="margin-top:.25em;" class="graphic"/>
-          </section>
-
-          <section>
-            <img src="assets/pri-list-full-top.jpg" alt=""/>
-            <aside class="notes">
-              <p>Create a list view template.</p>
-            </aside>
-          </section>
-
-          <section>
-            <div style="position:relative; left:0; top:0;">
-              <img style="width:259px; height:666px;" src="assets/pri-list-full-1.jpg" alt=""/>
-              <img style="position:absolute; left:350px; top:0; width:259px; height:666px;" class="fragment" src="assets/pri-list-full-2.jpg" alt=""/>
-            </div>
-             <aside class="notes">
-              <p>We already have an illustrated list component.</p>
-              <p>...and if there's a need for sidebar content, we have that too.</p>
-              <p>We didn't have to start from scratch, reuse what's already been created.</p>
-            </aside>
-          </section>
-
-        </section>
-
-        <section>
-          <p class="bigtext">What does that have to do with Drupal?</p>
-          <p class="bigtext fragment">Drupal is a Content Management... <em class="fragment highlight">System</em></p>
-        </section>
-
-        <section>
-          <section>
-            <p><small class="highlight-text">Step One</small></p>
-            <h2>Type and Color</h2>
-            <p>Drupal doesn't care</p>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <p><small class="highlight-text">Step Two</small></p>
-            <h2>Get to know your content</h2>
-          </section>
-
-          <section>
-            <p>In the biz, this is called Content Strategy</p>
-            <p class="fragment">Specifically, Data Modeling</p>
-          </section>
-
-          <section>
-            <h3>The Story</h3>
-            <ul style="column-count: 2; -webkit-column-count: 2; -moz-column-count: 2; margin-top: 1em;">
-              <li>Title</li>
-              <li>Date</li>
-              <li>Section</li>
-              <li>Author</li>
-              <li>Program</li>
-              <li>Lede text</li>
-              <li>Body text</li>
-              <li>Lede image</li>
-              <li>Lede image caption</li>
-              <li>Lede image credit</li>
-              <li>Program sound clip</li>
-              <li>Inline embedded content</li>
-              <li>Comments</li>
-              <li>Share controls</li>
-              <li>Taxonomy</li>
-              <li>External links</li>
-              <li>Related content</li>
-            </ul>
-            <aside class="notes">
-              <ul>
-                <li>Boy that looks familiar!</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h2>Build spec</h2>
-            <blockquote>Proper prior planning prevents piss poor performance</blockquote>
-            <p>&mdash;<a href="http://en.wikipedia.org/wiki/7_Ps_%28military_adage%29">British military adage</a></p>
-            <p><a href="http://bit.ly/palantir-build-spec">http://bit.ly/palantir-build-spec</a></p>
-          </section>
-          <section>
-            <h2>Build spec</h2>
-            <img src="assets/palantir-build-spec-fields.png" alt="The Palantir Build Spec spreadsheet" class="screenshot" />
-          </section>
-          <section>
-            <h2>Build spec</h2>
-            <img src="assets/palantir-build-spec-nodes.png" alt="The Palantir Build Spec spreadsheet" class="screenshot" />
-          </section>
-          <section>
-            <img src="assets/drupal-manage-fields.png" alt="Content Type config page" class="screenshot" />
-          </section>
-          <section>
-            <img src="assets/drupal-node-edit.png" alt="Node edit page" class="screenshot" />
-          </section>
-        </section>
-        <section>
-          <section>
-            <p><small class="highlight-text">Step Three</small></p>
-            <h2>Create components and templates</h2>
-          </section>
-          <section>
-            <p>Component == Visual representation of content</p>
-            <p class="fragment">Visual representation of content == Drupal View Mode</p>
-            <p class="fragment">Component == View Modes!</p>
-          </section>
-          <section>
-            <img src="assets/drupal-manage-display-full.png" alt="Full View mode configuration" class="screenshot" />
-            <aside class="notes">
-              <ul>
-                <li>Show only some fields</li>
-                <li>Formatters for fields: "Elements"</li>
-                <li>Hide others</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <img src="assets/drupal-node-view-unthemed.png" alt="Unstyled Full View Mode" class="screenshot" style="width: 750px;" />
-          </section>
-          <section>
-            <p>Sprinkle magic theming fairy dust</p>
-            <p class="fragment"><code>node-full.tpl.php</code> + CSS</p>
-          </section>
-          <section>
-            <img src="assets/pri-story-full-top.jpg" alt="Themed page" />
-          </section>
-        </section>
-        <section>
-          <section>
-            <p><small class="highlight-text">Step Four</small></p>
-            <h2>More components,<br />more templates!</h2>
-          </section>
-          <section>
-            <h2>Illustrated list (image style)</h2>
-            <img src="assets/drupal-image-style-configuration.png" alt="Image style configuration" class="screenshot" />
-          </section>
-          <section>
-            <h2>Illustrated list (view mode)</h2>
-            <img src="assets/drupal-view-mode-create.png" alt="Create new View mode" class="screenshot" />
-          </section>
-          <section>
-            <h2>Illustrated list (view mode)</h2>
-            <img src="assets/drupal-manage-display-illustrated-list.png" alt="Configure Illustrated list view mode" class="screenshot" />
-            <aside class="notes">
-              <ul>Where does this actually get used...?</ul>
-            </aside>
-          </section>
-          <section>
-            <h2>Views</h2>
-            <p class="fragment">This is a design tool, too...</p>
-            <p class="fragment">Content assembly!</p>
-          </section>
-          <section>
-            <h2>Views</h2>
-            <video preload="auto" class="stretch" controls data-autoplay>
-              <source src="assets/drupal-views-view-modes.webm" data-credit="Larry Garfield" />
-            </video>
-          </section>
-          <section>
-            <img src="assets/pri-home-story-list.jpg" alt="Styled Illustrated List" class="screenshot" />
-          </section>
-          <section>
-            <img src="assets/pri-home-full.jpg" style="width: 40%; position: relative; top: -0.7em" alt="Illustrated list on list page" />
-            <img src="assets/pri-list-full.jpg" style="width: 40%;" alt="Illustrated list on home page" style="margin-left: 50px;" />
-            <aside class="notes">
-              <ul>
-                <li>Same component reused on both pages.</li>
-                <li>New page? Components are ready to use.</li>
-                <li>Responsive? Every component has own breakpoints.</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <video preload="auto" class="stretch" controls data-autoplay>
-              <source src="assets/pri-responsive.webm" data-credit="Larry Garfield" />
-            </video>
-          </section>
-        </section>
-        <section>
-          <section>
-            <h2>In summary...</h2>
-          </section>
-          <section>
-            <p class="bigtext">Drupal is a very designer-friendly CMS!</p>
-            <p class="bigtext fragment">&hellip; if you design in systems</p>
-          </section>
-          <section>
-            <p class="bigtext">The most important step is<br />understanding your content</p>
-            <p class="fragment bigtext">...in the abstract</p>
-            <p class="fragment bigtext"><a href="http://www.palantir.net/blog/platonic-content">http://www.palantir.net/blog/platonic-content</a></p>
-          </section>
-          <section>
-            <p class="bigtext">If it's hard to build,<br />your design system could use improvement</p>
-            <p class="fragment bigtext">If a design element doesn't fit the system,<br />you probably don't need it</p>
-            <aside class="notes">
-              <ul>
-                <li>"Because it looks pretty" isn't a system.</li>
-                <li>Some exec wanted X thing to appear without reason? Stick to the system.</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <p class="bigtext">A system is a system</p>
-            <p class="fragment bigtext">Use the same system across your project</p>
-            <p class="fragment bigtext">Designers and developers define the system</p>
-            <p class="fragment bigtext">... together</p>
-          </section>
-        </section>
-        <section id="final">
-          <h2>Larry Garfield</h2>
-          <p><a href="http://www.palantir.net/">Palantir.net</a></p>
-          <p>Making the Web a Better Place</p>
-          <p>Keep tabs on our work at <a href="http://twitter.com/Palantir">@Palantir</a></p>
-        </section>
+    <section class="l-2up">
+      <h2><a href="http://twitter.com/Crell">@Crell</a></h2>
+      <div>
+        <img src="assets/larry-olaf-hug.jpg" alt="Larry implements Huggable" style="width: 350px; margin: 0" />
       </div>
+      <div>
+        <ul style="text-wrap: none">
+          <li>D.R.I.E.S., <a href="http://www.platform.sh/">Platform.sh</a></li>
+          <li style="margin-top: 1em;">Drupal 8 Web Services Lead</li>
+          <li style="margin-top: 1em;">Drupal Representative, <a href="http://www.php-fig.org/">PHP-FIG</a></li>
+          <li style="margin-top: 1em;"><code>implements Huggable</code></li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <h2>Formerly...</h2>
+      <img src="assets/palantirnet-logo-2013.svg" alt="Palantir.net used to pay me!" style="width: 300px; float: right;" />
+      <ul>
+        <li>Senior Architect, <a href="http://www.palantir.net/">Palantir.net</a></li>
+        <li>Loveable pedant</li>
+      </ul>
+    </section>
+    <section>
+      <section>
+        <p class="highlight-text"><small>The Key to Design Nirvana</small></p>
+        <h2><em>Think Systems</em>, Not Pages.</h2>
+        <aside class="notes">
+          <ul>
+            <li>Systems are how we unify everything</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h2>Why Design in Systems?</h2>
+        <ul>
+          <li class="fragment">Consistency <span class="highlight-text">(Visual + Content)</span></li>
+          <li class="fragment">Efficiency <span class="highlight-text">(Production)</span></li>
+          <li class="fragment">Sustainability <span class="highlight-text">(Life After Us)</span></li>
+        </ul>
+        <aside class="notes">
+          <ul>
+            <li><strong>Consistency:</strong> Aesthetics, UX, Patterns.</li>
+            <li><strong>Efficiency:</strong> Don't design 100s of pages. Allow the system to help inform design decisions later.</li>
+            <li><strong>Sustainability:</strong> Life beyond you. We want to create relationships not dependancies.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section>
+        <p class="highlight-text">
+          <small>sys•tem | ˈsistəm | <em>noun</em></small>
+        </p>
+        <h2><span class="passive-text">A set of</span> interconnected parts <span class="passive-text">forming a</span> complex whole<span class="passive-text">.</span></h2>
+      </section>
+
+      <section>
+        <p><small class="highlight-text">Interconnected Parts</small></p>
+        <h3>Elements, Components, Templates</h3>
+        <br/>
+        <p><small class="passive-text">Complex Whole</small></p>
+        <h3 class="passive-text">A CMS-Driven Site</h3>
+      </section>
+
+      <section>
+        <p><small class="highlight-text">Interconnected Parts</small></p>
+        <h3>Elements<span class="passive-text">, Components, Templates</span></h3>
+        <p>H1–H6, p, a, ul, ol, hr, blockquote, form elements, etc.</p>
+      </section>
+
+      <section>
+        <p><small class="highlight-text">Interconnected Parts</small></p>
+        <h3><span class="passive-text">Elements,</span> Components<span class="passive-text">, Templates</span></h3>
+        <p>Header, footer, navigation, hero element, call-to-action, etc.</p>
+        <aside class="notes">
+          <p>A component is a visual representation of content.</p>
+        </aside>
+      </section>
+
+      <section>
+        <p><small class="highlight-text">Interconnected Parts</small></p>
+        <h3><span class="passive-text">Elements, Components,</span> Templates</h3>
+        <p>General page, home page, landing page, listing page, etc.</p>
+      </section>
+
+      <section>
+        <h3>Atomic Design</h3>
+        <img src="assets/atomic.png" alt="Atomic design" style="margin-top:.25em;" class="graphic"/>
+        <aside class="notes">
+          <p>A phrase that Brad Frost coined.</p>
+        </aside>
+      </section>
+
+      <section>
+        <p><small class="passive-text">Interconnected Parts</small></p>
+        <h3 class="passive-text">Elements, Components, Templates</h3>
+        <br/>
+        <p><small class="highlight-text">Complex Whole</small></p>
+        <h3>A CMS-Driven Site</h3>
+      </section>
+
+      <section>
+        <img src="assets/druplicon.svg" style="width: 40%; border: 0; background: transparent;" alt="Druplicon" />
+      </section>
+
+    </section>
+
+    <section data-background="#d3401e">
+      <img src="assets/pri-logo-white.png" alt="" />
+      <aside class="notes">
+        <ul>
+          <li><strong>Public Radio International</strong></li>
+          <li>They develop and distribute public access content for the radio.</li>
+          <li>When they can my Palantir, they were looking for a modern design and responsive site.</li>
+          <li>A destination for people to come and consume, engage and share content.</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section>
+
+      <section>
+        <p><small class="highlight-text">Step One</small></p>
+        <h2>Start at the Beginning</h2>
+        <aside class="notes">
+          <ul>
+            <li><strong>Where do you begin?</strong></li>
+            <li>You've met the client, heard their goals, now what?</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section>
+        <img src="assets/pri-colors.jpg" alt=""/>
+        <aside class="notes">
+          <p>Your design should be based on their branding.</p>
+          <p>Use this as your foundation.</p>
+        </aside>
+      </section>
+
+      <section>
+        <p><small class="">Elements: H1–H6, p, a, ul, ol, hr, etc.</small>
+          <img src="assets/pri-elements-full.jpg" alt="" style="margin-top:.25em;"/>
+        </p>
+        <aside class="notes">
+          <p>Start work on the type system. Modular scale.</p>
+          <p>Once you have the color palette and base level elements you'll start to see things take shape.</p>
+        </aside>
+      </section>
+
+    </section>
+
+    <section>
+
+      <section>
+        <p><small class="highlight-text">Step Two</small></p>
+        <h2>Get to Know Your Content</h2>
+        <p class="passive-text">Why are people coming here?</p>
+        <aside class="notes">
+          <ul>
+            <li>This is a vital step. One that shouldn't be overlooked.</li>
+            <li>Clients and sometimes designers/developers get hung up on certain features or blue sky ideas.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section>
+        <h3>The Story</h3>
+        <ul style="column-count: 2; -webkit-column-count: 2; -moz-column-count: 2; margin-top: 1em;">
+          <li>Title</li>
+          <li>Date</li>
+          <li>Section</li>
+          <li>Author</li>
+          <li>Program</li>
+          <li>Lede text</li>
+          <li>Body text</li>
+          <li>Lede image</li>
+          <li>Lede image caption</li>
+          <li>Lede image credit</li>
+          <li>Program sound clip</li>
+          <li>Inline embedded content</li>
+          <li>Comments</li>
+          <li>Share controls</li>
+          <li>Taxonomy</li>
+          <li>External links</li>
+          <li>Related content</li>
+        </ul>
+        <aside class="notes">
+          <ul>
+            <li>Read and listen to stories</li>
+            <li>We run through an exercise and start to capture what makes up a story. What's needed.</li>
+          </ul>
+        </aside>
+      </section>
+
+    </section>
+
+    <section>
+
+      <section>
+        <p><small class="highlight-text">Step Three</small></p>
+        <h2><span class="passive-text">Combine</span> Colors &amp; Elements <span class="passive-text">to Create</span> Components<span class="passive-text">, and Your First</span> Template</h2>
+        <aside class="notes">
+          <ul>
+            <li>Start with the whole view of a story and use the elements we just mentioned.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section>
+        <p><small class="">Story Header: Date, Author, Title, Program, Section</small>
+          <img src="assets/pri-component-story-header.jpg" alt="" style="margin-top:.25em;"/>
+        </p>
+        <aside class="notes">
+          <ul>
+            <li>Disclaimer: Showing finished compos; start with sketches for form and strucgture.</li>
+            <li>High level information.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section>
+        <p><small class="">Ad Block</small>
+          <img src="assets/pri-component-ad.jpg" alt="" style="margin-top:.25em;"/>
+        </p>
+        <aside class="notes">
+          <ul>
+            <li>Pay attention to all styling, even ad blocks. How will those look in the design?</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section>
+        <p><small class="">Lede Image, caption, credit</small>
+          <img src="assets/pri-component-lede.jpg" alt="" style="margin-top:.25em;"/>
+        </p>
+        <aside class="notes">
+          <ul>
+            <li>We want the lede information to stand out so we know to be aware of proportion and hierarchy.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section>
+        <p><small class="">Share controls</small>
+          <img src="assets/pri-component-share.jpg" alt="" style="margin-top:.25em;"/>
+        </p>
+        <aside class="notes">
+          <ul>
+            <li>Sharing is important and should be readily available to the user.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section>
+        <img src="assets/pri-story-full-top.jpg" alt=""/>
+      </section>
+      <section>
+        <img style="width:205px; height:665px;" src="assets/pri-story-full-1.jpg" alt=""/>
+        <aside class="notes">
+          <ul>
+            <li>Here is the full story template... we just scratched the surface.</li>
+            <li>Keep repeating this process. Add to the story.</li>
+          </ul>
+        </aside>
+      </section>
+    </section>
+    <section>
+      <section>
+        <p><small class="highlight-text">Step Four</small></p>
+        <h2>Make More Templates!</h2>
+        <p class="passive-text">Mind what you have learned...</p>
+      </section>
+
+      <section>
+        <p><small class="highlight-text">Analyze Your Content</small></p>
+        <h2>What Should Go on the<br />Home Page?</h2>
+        <p class="passive-text">Why people are coming here Again? For Stories!</p>
+        <aside class="notes">
+          <p>The homepage should offer various stories to the user.</p>
+        </aside>
+      </section>
+
+      <section>
+        <h3>The Story</h3>
+        <ul style="column-count: 2; -webkit-column-count: 2; -moz-column-count: 2; margin-top: 1em;">
+          <li>Title</li>
+          <li>Date</li>
+          <li>Section</li>
+          <li>Author</li>
+          <li>Program</li>
+          <li>Lede text</li>
+          <li>Body text</li>
+          <li>Lede image</li>
+          <li>Lede image caption</li>
+          <li>Lede image credit</li>
+          <li>Program sound clip</li>
+          <li>Inline embedded content</li>
+          <li>Comments</li>
+          <li>Share controls</li>
+          <li>Taxonomy</li>
+          <li>External links</li>
+          <li>Related content</li>
+        </ul>
+        <aside class="notes">
+          <p>We'll need to start refining the full story template into bite size pieces.</p>
+          <p>What's important on a smaller scale?</p>
+        </aside>
+      </section>
+
+      <section>
+        <h3>The Story Item</h3>
+        <ul>
+          <li>Title</li>
+          <li>Date</li>
+          <li>Section</li>
+          <li>Program</li>
+          <li>Lede text</li>
+          <li>Lede image</li>
+          <li>Share count</li>
+        </ul>
+        <aside class="notes">
+          <p>You can do another exercise to boil down the story element into a smaller list.</p>
+          <p>This is called a 'Story item'.</p>
+          <p>We need to describe a story without showing the whole thing.</p>
+        </aside>
+      </section>
+
+      <section>
+        <p>Story Item: Lead Feature
+          <img src="assets/pri-home-story-lead.jpg" alt=""/>
+          <small>
+            Title, Date, Section, Program, Lede text, Lede image, Share count
+          </small>
+        </p>
+        <aside class="notes">
+          <p>The homepage needs to be engaging so let's create some variety.</p>
+          <p>Full width featured component.</p>
+        </aside>
+      </section>
+
+      <section>
+        <p>Story Item: Square Featured
+          <img src="assets/pri-home-story-square.jpg" alt=""/>
+          <small>
+            Title, Date, Section, Program, <span class="passive-text">Lede text,</span> Lede image, Share count
+          </small>
+        </p>
+        <aside class="notes">
+          <p>We can create a grid component for additional visual interest.</p>
+        </aside>
+      </section>
+
+      <section>
+        <p>Story Item: Illustrated List
+          <img src="assets/pri-home-story-list.jpg" alt=""/>
+          <small>
+            Title, Date, Section, Program, <span class="passive-text">Lede text,</span> Lede image, Share count
+          </small>
+        </p>
+        <aside class="notes">
+          <p>This list view works perfectly for chronological ordering. Allows users to scroll through multiple story with high efficiency.</p>
+        </aside>
+      </section>
+
+      <section>
+        <p>Story Item: Illustrated List Compact
+          <img src="assets/pri-home-story-section.jpg" alt=""/>
+          <small>
+            Title, <span class="passive-text">Date,</span> Section, <span class="passive-text">Program, Lede text,</span> Lede image, <span class="passive-text">Share count</span>
+          </small>
+        </p>
+        <aside class="notes">
+          <p>Combination of the square and illustrated list. Allows us to span multiple stories across the page.</p>
+        </aside>
+      </section>
+
+      <section>
+        <p>Story Item: List Compact
+          <img src="assets/pri-story-list-compact.jpg" alt=""/>
+          <small>
+            Title, Date, Section, <span class="passive-text">Program, Lede text, Lede image, Share count</span>
+          </small>
+        </p>
+        <aside class="notes">
+          <p>This is the simplest form but still offers enough information for engagement.</p>
+          <p>Maybe used for a sidebar component for related content.</p>
+        </aside>
+      </section>
+
+      <section>
+        <img style="position:relative; left:0; top:0;" class="" src="assets/pri-home-full-top.jpg" alt=""/>
+        <aside class="notes">
+          <p>Here is the full view of the homepage.</p>
+        </aside>
+      </section>
+
+      <section>
+        <div style="position:relative; left:0; top:0;">
+          <img style="width:266px; height:666px;" src="assets/pri-home-full-1.jpg" alt=""/>
+          <img style="position:absolute; left:348px; top:0; width:266px; height:666px;" class="fragment" src="assets/pri-home-full-2.jpg" alt=""/>
+          <img style="position:absolute; left:348px; top:0; width:266px; height:666px;" class="fragment" src="assets/pri-home-full-3.jpg" alt=""/>
+          <img style="position:absolute; left:348px; top:0; width:266px; height:666px;" class="fragment" src="assets/pri-home-full-4.jpg" alt=""/>
+        </div>
+        <aside class="notes">
+          <p>By combining these components we created a dynamic and visually pleasing template.</p>
+          <p>Here's the breakdown to recap</p>
+        </aside>
+      </section>
+
+      <section>
+        <p><small class="highlight-text">The Good News</small></p>
+        <h2>Creating Another Page Gets Easier Every Time</h2>
+        <p></p>
+      </section>
+
+      <section>
+        <h3>Atomic Design</h3>
+        <img src="assets/atomic.png" alt="" style="margin-top:.25em;" class="graphic"/>
+      </section>
+
+      <section>
+        <img src="assets/pri-list-full-top.jpg" alt=""/>
+        <aside class="notes">
+          <p>Create a list view template.</p>
+        </aside>
+      </section>
+
+      <section>
+        <div style="position:relative; left:0; top:0;">
+          <img style="width:259px; height:666px;" src="assets/pri-list-full-1.jpg" alt=""/>
+          <img style="position:absolute; left:350px; top:0; width:259px; height:666px;" class="fragment" src="assets/pri-list-full-2.jpg" alt=""/>
+        </div>
+        <aside class="notes">
+          <p>We already have an illustrated list component.</p>
+          <p>...and if there's a need for sidebar content, we have that too.</p>
+          <p>We didn't have to start from scratch, reuse what's already been created.</p>
+        </aside>
+      </section>
+
+    </section>
+
+    <section>
+      <p class="bigtext">What does that have to do with Drupal?</p>
+      <p class="bigtext fragment">Drupal is a Content Management... <em class="fragment highlight">System</em></p>
+    </section>
+
+    <section>
+      <section>
+        <p><small class="highlight-text">Step One</small></p>
+        <h2>Type and Color</h2>
+        <p>Drupal doesn't care</p>
+      </section>
+    </section>
+
+    <section>
+      <section>
+        <p><small class="highlight-text">Step Two</small></p>
+        <h2>Get to know your content</h2>
+      </section>
+
+      <section>
+        <p>In the biz, this is called Content Strategy</p>
+        <p class="fragment">Specifically, Data Modeling</p>
+      </section>
+
+      <section>
+        <h3>The Story</h3>
+        <ul style="column-count: 2; -webkit-column-count: 2; -moz-column-count: 2; margin-top: 1em;">
+          <li>Title</li>
+          <li>Date</li>
+          <li>Section</li>
+          <li>Author</li>
+          <li>Program</li>
+          <li>Lede text</li>
+          <li>Body text</li>
+          <li>Lede image</li>
+          <li>Lede image caption</li>
+          <li>Lede image credit</li>
+          <li>Program sound clip</li>
+          <li>Inline embedded content</li>
+          <li>Comments</li>
+          <li>Share controls</li>
+          <li>Taxonomy</li>
+          <li>External links</li>
+          <li>Related content</li>
+        </ul>
+        <aside class="notes">
+          <ul>
+            <li>Boy that looks familiar!</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h2>Build spec</h2>
+        <blockquote>Proper prior planning prevents piss poor performance</blockquote>
+        <p>&mdash;<a href="http://en.wikipedia.org/wiki/7_Ps_%28military_adage%29">British military adage</a></p>
+        <p><a href="http://bit.ly/palantir-build-spec">http://bit.ly/palantir-build-spec</a></p>
+      </section>
+      <section>
+        <h2>Build spec</h2>
+        <img src="assets/palantir-build-spec-fields.png" alt="The Palantir Build Spec spreadsheet" class="screenshot" />
+      </section>
+      <section>
+        <h2>Build spec</h2>
+        <img src="assets/palantir-build-spec-nodes.png" alt="The Palantir Build Spec spreadsheet" class="screenshot" />
+      </section>
+      <section>
+        <img src="assets/drupal-manage-fields.png" alt="Content Type config page" class="screenshot" />
+      </section>
+      <section>
+        <img src="assets/drupal-node-edit.png" alt="Node edit page" class="screenshot" />
+      </section>
+    </section>
+    <section>
+      <section>
+        <p><small class="highlight-text">Step Three</small></p>
+        <h2>Create components and templates</h2>
+      </section>
+      <section>
+        <p>Component == Visual representation of content</p>
+        <p class="fragment">Visual representation of content == Drupal View Mode</p>
+        <p class="fragment">Component == View Modes!</p>
+      </section>
+      <section>
+        <img src="assets/drupal-manage-display-full.png" alt="Full View mode configuration" class="screenshot" />
+        <aside class="notes">
+          <ul>
+            <li>Show only some fields</li>
+            <li>Formatters for fields: "Elements"</li>
+            <li>Hide others</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <img src="assets/drupal-node-view-unthemed.png" alt="Unstyled Full View Mode" class="screenshot" style="width: 750px;" />
+      </section>
+      <section>
+        <p>Sprinkle magic theming fairy dust</p>
+        <p class="fragment"><code>node-full.html.twig</code> + CSS</p>
+      </section>
+      <section>
+        <img src="assets/pri-story-full-top.jpg" alt="Themed page" />
+      </section>
+    </section>
+    <section>
+      <section>
+        <p><small class="highlight-text">Step Four</small></p>
+        <h2>More components,<br />more templates!</h2>
+      </section>
+      <section>
+        <h2>Illustrated list (image style)</h2>
+        <img src="assets/drupal-image-style-configuration.png" alt="Image style configuration" class="screenshot" />
+      </section>
+      <section>
+        <h2>Illustrated list (view mode)</h2>
+        <img src="assets/drupal-view-mode-create.png" alt="Create new View mode" class="screenshot" />
+      </section>
+      <section>
+        <h2>Illustrated list (view mode)</h2>
+        <img src="assets/drupal-manage-display-illustrated-list.png" alt="Configure Illustrated list view mode" class="screenshot" />
+        <aside class="notes">
+          <ul>Where does this actually get used...?</ul>
+        </aside>
+      </section>
+      <section>
+        <h2>Views</h2>
+        <p class="fragment">This is a design tool, too...</p>
+        <p class="fragment">Content assembly!</p>
+      </section>
+      <section>
+        <h2>Views</h2>
+        <video preload="auto" class="stretch" controls data-autoplay>
+          <source src="assets/drupal-views-view-modes.webm" data-credit="Larry Garfield" />
+        </video>
+      </section>
+      <section>
+        <img src="assets/pri-home-story-list.jpg" alt="Styled Illustrated List" class="screenshot" />
+      </section>
+      <section>
+        <img src="assets/pri-home-full.jpg" style="width: 40%; position: relative; top: -0.7em" alt="Illustrated list on list page" />
+        <img src="assets/pri-list-full.jpg" style="width: 40%;" alt="Illustrated list on home page" style="margin-left: 50px;" />
+        <aside class="notes">
+          <ul>
+            <li>Same component reused on both pages.</li>
+            <li>New page? Components are ready to use.</li>
+            <li>Responsive? Every component has own breakpoints.</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <video preload="auto" class="stretch" controls data-autoplay>
+          <source src="assets/pri-responsive.webm" data-credit="Larry Garfield" />
+        </video>
+      </section>
+    </section>
+    <section>
+      <section>
+        <h2>In summary...</h2>
+      </section>
+      <section>
+        <p class="bigtext">Drupal is a very designer-friendly CMS!</p>
+        <p class="bigtext fragment">&hellip; if you design in systems</p>
+      </section>
+      <section>
+        <p class="bigtext">The most important step is<br />understanding your content</p>
+        <p class="fragment bigtext">...in the abstract</p>
+        <p class="fragment bigtext"><a href="http://www.palantir.net/blog/platonic-content">http://www.palantir.net/blog/platonic-content</a></p>
+      </section>
+      <section>
+        <p class="bigtext">If it's hard to build,<br />your design system could use improvement</p>
+        <p class="fragment bigtext">If a design element doesn't fit the system,<br />you probably don't need it</p>
+        <aside class="notes">
+          <ul>
+            <li>"Because it looks pretty" isn't a system.</li>
+            <li>Some exec wanted X thing to appear without reason? Stick to the system.</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <p class="bigtext">A system is a system</p>
+        <p class="fragment bigtext">Use the same system across your project</p>
+        <p class="fragment bigtext">Designers and developers define the system</p>
+        <p class="fragment bigtext">... together</p>
+      </section>
+    </section>
+    <section id="final">
+      <h2>Larry Garfield</h2>
+      <p>Director of Runtimes and Integrations <a href="http://www.platform.sh/">Platform.sh</a></p>
+      <p>Continuous Deployment Cloud Hosting</p>
+      <p>Stalk us at <a href="http://twitter.com/Platformsh">@PlatformSH</a></p>
+
+      <p style="margin-top: 2em"><small>Thanks to <a href="http://www.palantir.net/">Palantir.net</a> for helping develop these slides</small></p>
+    </section>
+
+  </div>
 
 </div>
 
